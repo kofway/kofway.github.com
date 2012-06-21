@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+	<title>Web API Tests</title>
+	<link rel="stylesheet" href="css/base.css" type="text/css" media="screen">
+</head>
+
+<body>
+
+	<div style="text-align: center;">m
+		<h1>
+			Web APIs
+		</h1>
+	</div>
+
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<!-- 					CONNECTION 					-->
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+  
+	<div id="connection" class="container">
+		<h2>
+			Connection API
+		</h2>
+		<section class="main-content">
+	    	<span></span>
+	    	<p>
+				This section checks the connection status.
+			</p>
+		</section>
+	</div>
+	
+	<style>
+	#connection {
+	  height: 90px;
+	  text-align: center;
+	}
+	#connection span {
+	  height: 60px;
+	  display: inline-block;
+	  font-size: 24px; 
+	  padding-left: 70px;
+	  background-repeat: no-repeat;
+	  vertical-align: middle;
+	  line-height: 60px;
+	  background-image: url(img/online.png), url(img/offline.png);
+	}
+	#connection span.online {background-size: 60px 60px, 0 0}
+	#connection span.offline {background-size: 0 0, 60px 60px}
+	</style>
+	
+	<script>
+	function updateOnlineStatus(online) {
+	  if (online) {
+	    $("#connection span").className = "online";
+	    $("#connection span").textContent = "Online";
+	    $("#mapbutton").style.visibility = "visible";
+	    } else {
+	    $("#connection span").className = "offline";
+	    $("#connection span").textContent = "Offline";
+	    $("#mapbutton").style.visibility = "hidden";
+	  }
+	}
+	document.body.addEventListener("offline", function () { updateOnlineStatus(false) }, false);
+	document.body.addEventListener("online", function () { updateOnlineStatus(true) }, false);
+	updateOnlineStatus(navigator.onLine);
+	</script>
+
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<!--                    VIBRATION                   -->
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	
+	<div class="container">
+	    <h2>
+	        Vibration API
+	    </h2>
+	    <span class="main-content">
+	        <button id="vibrate-one-second">Vibrate once</button>
+	        <button id="vibrate-twice">Vibrate twice</button>
+	        <button id="vibrate-long-time">Vibrate a long time</button>
+	        <button id="vibrate-off">Turn off current vibration</button>
+	    </span>
+	</div>
+	<script src="js/vibrate.js"></script>
+	
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<!--                    BATTERY                     -->
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	
+	<div class="container">
+		<h2>
+			Battery API
+		</h2>
+		<section class="main-content">
+			<p id="battery-supported"></p>
+			<p>Battery level is <b id="battery-level"></b></p>
+			<p>Battery status is <b id="charging-status"></b><b>charging</b></p>
+			<p>Battery will be fully charged in <b id="battery-charged"></b> minutes.</p>
+			<p>Battery will be discharged in <b id="battery-discharged"></b> minutes.</p>
+		</section>
+	</div>
+	<script src="js/battery.js"></script>
+	
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<!--                FULL SCREEN                     -->
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	
+	<div class="container">
+		<h2>
+			Fullscreen API
+		</h2>
+		
+		<section class="main-content">
+			<p>
+				<button id="view-fullscreen">Fullscreen</button>
+				<button id="cancel-fullscreen">Cancel fullscreen</button>
+			</p>
+		
+			<p>Fullscreen state: I'm <b id="fullscreen-state">not </b>fullscreen</p>
+		
+		
+		<h2>Fullscreen for elements</h2>
+		<p>Fullscreen Videos</p>
+		
+		<video id="mario-video" controls width="320">
+			<source src="http://www.archive.org/download/Mario1_507/Mario1_507_512kb.mp4">
+			<source src="http://www.archive.org/download/Mario1_507/Mario1_507.ogv">
+		</video>
+		
+		<button id="video-fullscreen">View fullscreen video</button>
+		</section>
+	</div>
+	<script src="js/fullscreen.js"></script>
+	
+	
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<!--                  CAMERA                        -->
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	
+	<div class="container">
+		<h2>
+			Camera API
+		</h2>
+		<section class="main-content">
+			<p>
+			    <input type="file" id="take-picture" accept="image/*">
+			</p>		
+			<h2>Preview:</h2>
+			<p>
+			    <img src="about:blank" alt="" id="show-picture">
+			</p>		
+			<p id="error"></p>
+		</section>
+	</div>
+	<script src="js/camera.js"></script>
+	
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<!--                  TWITTER                       -->
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->	
+	
+	<div class="container">
+		<h2>
+			Twitter
+		</h2>		
+		<section class="main-content">
+			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://hacks.mozilla.org">Tweet</a>
+		</section>
+		<p class="footer"></p>
+	</div>	
+	<script src="js/twitter.js"></script>
+
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<!--              CAMERA RECORDING                  -->
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->		
+	
+	<div class="container">
+		<h2>
+			Camera Live Stream
+		</h2>
+		<section class="main-content">
+			<h3>Preview:</h3>
+			<p>
+				<video id="live-video" style="border: 1px solid #000"></video>
+			</p>
+			<p id="error"></p>
+		</section>
+	</div>
+	<script src="js/camera_live.js"></script>
+	
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+	<!--                ORIENTATION                     -->
+	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->	
+	
+	<div id="orientation" class="container">
+		<img id="phone" src="img/phone.png">
+    </div>
+
+	<script src="js/orientation.js"></script>
+
+	<style>
+		#phone { width: 50px;display:block;margin:50px auto; }
+		#orientation {height: 200px}
+		#orientation {border-left: 1px solid rgba(0,0,0,0.2);}
+	</style>
+
+
+</body>
+</html>
