@@ -1,0 +1,14 @@
+{  
+      "version": "0.1",  
+      "name": "WebAPI Tests",  
+      "description": "Tests for various mozilla WebAPIs.",  
+ 
+      "developer": {  
+        "name": "Mozilla",  
+        "url": "http://mozillalabs.com"  
+      },  
+      "installs_allowed_from": ["*"],  
+      "appcache_path": "/cache.manifest",  
+      "default_locale": "en"  
+
+}  
