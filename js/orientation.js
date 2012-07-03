@@ -1,3 +1,4 @@
+(function () {
 var v = $("#phone"); var scale, angle;
 var classSet = false;
 window.addEventListener("deviceorientation", function(e) {
@@ -11,3 +12,5 @@ angle = e.gamma + "deg"; scale = (e.beta + 30) / 60;
 window.setInterval(function() {
 	v.style.MozTransform = "rotate(" + angle + ") scale(" + scale + ")";
 }, 100);
+
+})();
