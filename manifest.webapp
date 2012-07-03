@@ -10,5 +10,5 @@
       "installs_allowed_from": ["*"],  
       "appcache_path": "/cache.manifest",  
       "default_locale": "en"  
-
+      
 }  
