@@ -191,7 +191,6 @@
 				Camera API
 				</td>
 				<td class="col_check">
-					<section class="main-content">
 					<p>
 						<input type="file" id="take-picture" accept="image/*">
 					</p>		
@@ -200,7 +199,6 @@
 						<img src="about:blank" alt="" id="show-picture">
 					</p>		
 					<p id="error"></p>
-					</section>
 				</td>
 				<td class="col_status">
 					<p id="camera_status"></p>
@@ -215,13 +213,22 @@
 	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->	
 	
 	<div class="container">
-		<h2>
-			Twitter
-		</h2>		
-		<section class="main-content">
-			<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://hacks.mozilla.org">Tweeeeeeet</a>
-		</section>
-		<p class="footer"></p>
+		<table class="table_view">
+		<tr>
+			<td>
+				Twitter
+			</td>		
+			<td class="col_check">
+				<section class="main-content">
+				<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://hacks.mozilla.org">Tweeeeeeet</a>
+				</section>
+				<p class="footer"></p>
+			</td>
+			<td class="col_status">
+				<p id="social_status"></p>
+			</td>
+		</tr>
+		</table>
 	</div>	
 	<script src="js/twitter.js"></script>
 	
@@ -230,10 +237,13 @@
 	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->	
 	
 	<div id="orientation" class="container">
-		<h2>
-			Orientation
-		</h2>		
-		<img id="phone" src="img/phone.png">
+		<table class="table_view">
+		
+			<h2>
+				Orientation
+			</h2>		
+			<img id="phone" src="img/phone.png">
+		</table>
     </div>
 
 	<script src="js/orientation.js"></script>
