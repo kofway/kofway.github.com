@@ -30,22 +30,6 @@
         }, false);
     }
 
-
-    var fullscreenState = document.getElementById("fullscreen-state");
-    if (fullscreenState) {
-        document.addEventListener("fullscreenchange", function () {
-            fullscreenState.innerHTML = (document.fullscreen)? "" : "not ";
-        }, false);
-        
-        document.addEventListener("mozfullscreenchange", function () {
-            fullscreenState.innerHTML = (document.mozFullScreen)? "" : "not ";
-        }, false);
-        
-        document.addEventListener("webkitfullscreenchange", function () {
-            fullscreenState.innerHTML = (document.webkitIsFullScreen)? "" : "not ";
-        }, false);
-    }
-
     var marioVideo = document.getElementById("mario-video")
         videoFullscreen = document.getElementById("video-fullscreen");
 
@@ -59,11 +43,17 @@
             }
             else if (marioVideo.webkitRequestFullScreen) {
                 marioVideo.webkitRequestFullScreen();
-                /*
-*Kept here for reference: keyboard support in full screen
-* marioVideo.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
-*/
             }
         }, false);
     }
+    
+    var fs = document.documentElement.mozRequestFullScreen;
+    var fsStatus = document.getElementById("fs_status");
+    if (fs){
+        fsStatus.innerHTML = "PASS";
+    }else{
+	    fsStatus.innerHTML = "FAIL";
+    }
+    
+    
 })();

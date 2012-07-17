@@ -159,26 +159,20 @@
 				<td>
 					Fullscreen API
 				</td>
-				<td>
-					<section class="main-content">
-					<p>
+				<td class="col_check">
 					<button id="view-fullscreen">Fullscreen</button>
-					<button id="cancel-fullscreen">Exit FS</button>
-					</p>
-					
-					<p>Fullscreen state: I'm <b id="fullscreen-state">not </b>fullscreen</p>
-					
-					
-					<h2>Fullscreen for elements</h2>
+					<button id="cancel-fullscreen">Exit FS</button>	
 					<p>Fullscreen Videos</p>
 					
-					<video id="mario-video" controls width="320">
-					<source src="http://www.archive.org/download/Mario1_507/Mario1_507_512kb.mp4">
-					<source src="http://www.archive.org/download/Mario1_507/Mario1_507.ogv">
+					<video id="mario-video" controls width="50%">
+						<source src="http://www.archive.org/download/Mario1_507/Mario1_507_512kb.mp4">
+						<source src="http://www.archive.org/download/Mario1_507/Mario1_507.ogv">
 					</video>
 					
-					<button id="video-fullscreen">View fullscreen video</button>
-				</section>
+					<button id="video-fullscreen">FS Video</button>
+				</td>
+				<td class="col_status">
+					<p id="fs_status"></p>
 				</td>
 			</tr>
 		</table>
