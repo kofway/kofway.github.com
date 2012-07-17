@@ -19,37 +19,48 @@
 	<!-- 					INSTALL 					-->
 	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->	
 	
-	<div id="connection" class="container">
-		<h2>
-			Installation
-		</h2>
-		<section class="main-content">
-	        <button id="install_button">Install</button>
-		</section>
-	</div>
-	
-	
+	<div id="div_install" class="container">
+	<table class="table_view">
+		<tr>
+			<td>
+				Installation
+			</td>
+			<td class="col_check">
+			    <button id="install_button" style="margin: 0; text-align: center;" >Install</button>
+			</td>
+			<td class="col_status">
+				Status
+			</td>
+		</tr>
+	</table>
+	</div>	
 
 	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	<!-- 					CONNECTION 					-->
 	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
   
 	<div id="connection" class="container">
-		<h2>
-			Connection API
-		</h2>
-		<section class="main-content">
-	    	<span></span>
-	    	<p>
-				This section checks the connection status.
-			</p>
-		</section>
+		<table class="table_view">
+			<tr>
+				<td>
+					Connection API
+				</td>
+				<td class="col_check">
+			    	<button id="connection_button">Check</button>
+				</td>
+				<td class="col_status">
+					<section class="main-content">
+				    	<span></span>
+					</section>
+				</td>
+			</tr>
+		</table>
 	</div>
 	
 	<style>
 	#connection {
 	  height: 90px;
-	  text-align: center;
+	  /*text-align: center;*/
 	}
 	#connection span {
 	  height: 60px;
@@ -57,7 +68,7 @@
 	  font-size: 24px; 
 	  padding-left: 70px;
 	  background-repeat: no-repeat;
-	  vertical-align: middle;
+	  /*vertical-align: middle;*/
 	  line-height: 60px;
 	  background-image: url(img/online.png), url(img/offline.png);
 	}
@@ -87,15 +98,19 @@
 	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	
 	<div class="container">
-	    <h2>
-	        Vibration API
-	    </h2>
-	    <span class="main-content">
-	        <button id="vibrate-one-second">Vibrate once</button>
-	        <button id="vibrate-twice">Vibrate twice</button>
-	        <button id="vibrate-long-time">Vibrate a long time</button>
-	        <button id="vibrate-off">Turn off current vibration</button>
-	    </span>
+		<table class="table_view">
+			<tr>
+			    <td>
+			        Vibration API
+			    </td>
+			    <td class="col_check">
+			        <button id="vibrate-one-second" style="margin: 0; text-align: center;">Vibrate</button>
+			    </td>
+			    <td class="col_status">
+			    	Status
+			    </td>
+			</tr>
+		</table>
 	</div>
 	<script src="js/vibrate.js"></script>
 	
@@ -104,16 +119,22 @@
 	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	
 	<div class="container">
-		<h2>
-			Battery API
-		</h2>
-		<section class="main-content">
-			<p id="battery-supported"></p>
-			<p>Battery level is <b id="battery-level"></b></p>
-			<p>Battery status is <b id="charging-status"></b><b>charging</b></p>
-			<p>Battery will be fully charged in <b id="battery-charged"></b> minutes.</p>
-			<p>Battery will be discharged in <b id="battery-discharged"></b> minutes.</p>
-		</section>
+		<table class="table_view">
+			<tr>
+				<td>
+					Battery API
+				</td>
+				<td>
+					<section class="main-content">
+						<p id="battery-supported"></p>
+						<p>Battery level: <b id="battery-level"></b></p>
+						<p>Battery status: <b id="charging-status"></b><b>charging</b></p>
+						<p>Time Until Fully charged: <b id="battery-charged"></b> minutes.</p>
+						<p>Time Until Fully discharged: <b id="battery-discharged"></b> minutes.</p>
+					</section>
+				</td>
+			</tr>
+		</table>
 	</div>
 	<script src="js/battery.js"></script>
 	
@@ -129,7 +150,7 @@
 		<section class="main-content">
 			<p>
 				<button id="view-fullscreen">Fullscreen</button>
-				<button id="cancel-fullscreen">Cancel fullscreen</button>
+				<button id="cancel-fullscreen">Exit FS</button>
 			</p>
 		
 			<p>Fullscreen state: I'm <b id="fullscreen-state">not </b>fullscreen</p>

@@ -8,7 +8,6 @@
         "url": "http://mozillalabs.com"  
       },  
       "installs_allowed_from": ["*"],  
-      "appcache_path": "/cache.manifest",  
-      "default_locale": "en"  
+            "default_locale": "en"  
       
 }  
