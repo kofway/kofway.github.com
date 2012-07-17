@@ -11,6 +11,7 @@
     if (battery) {
         function setStatus () {
             console.log("Set status");
+            batterySupported.innerHTML = "PASS";
             batteryLevel.innerHTML = Math.round(battery.level * 100) + "%";
             chargingStatus.innerHTML = (battery.charging)? "" : "not ";
             batteryCharged.innerHTML = (battery.chargingTime == "Infinity")? "Infinity" : parseInt(battery.chargingTime / 60, 10);
@@ -25,7 +26,7 @@
         battery.addEventListener("dischargingtimechange", setStatus, false);
     }
     else {
-        batterySupported.innerHTML = "Battery API Unavailable";
+        batterySupported.innerHTML = "FAIL";
         batteryLevel.innerHTML = "Battery API Unavailable";
         chargingStatus.innerHTML = "Battery API Unavailable";
         batteryCharged.innerHTML = "Battery API Unavailable";
