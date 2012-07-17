@@ -1,4 +1,11 @@
 (function () {
+	var vib = navigator.mozVibrate();
+	var vibStatus = document.getElementById(vib_status);
+	if (!vib){
+		vibStatus.innerHTML = "FAIL";
+	}else{
+		vibStatus.innerHTML = "PASS";
+	}
     document.querySelector("#vibrate-one-second").addEventListener("click", function () {
         navigator.mozVibrate(1000);
     }, false);

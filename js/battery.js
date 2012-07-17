@@ -25,6 +25,10 @@
         battery.addEventListener("dischargingtimechange", setStatus, false);
     }
     else {
-        batterySupported.innerHTML = "Battery API not supported on your device/computer";
+        batterySupported.innerHTML = "Battery API Unavailable";
+        batteryLevel.innerHTML = "Battery API Unavailable";
+        chargingStatus.innerHTML = "Battery API Unavailable";
+        batteryCharged.innerHTML = "Battery API Unavailable";
+        batteryDischarged.innerHTML = "Battery API Unavailable";
     }
 })();

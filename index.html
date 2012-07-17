@@ -26,10 +26,10 @@
 				Installation
 			</td>
 			<td class="col_check">
-			    <button id="install_button" style="margin: 0; text-align: center;" >Install</button>
+			    <button id="install_button" class="test_button">Install</button>
 			</td>
 			<td class="col_status">
-				Status
+				<p id="install_status"></p>
 			</td>
 		</tr>
 	</table>
@@ -107,7 +107,7 @@
 			        <button id="vibrate-one-second" style="margin: 0; text-align: center;">Vibrate</button>
 			    </td>
 			    <td class="col_status">
-			    	Status
+					<p id="vib_status"></p>
 			    </td>
 			</tr>
 		</table>
@@ -124,14 +124,14 @@
 				<td>
 					Battery API
 				</td>
-				<td>
-					<section class="main-content">
-						<p id="battery-supported"></p>
-						<p>Battery level: <b id="battery-level"></b></p>
-						<p>Battery status: <b id="charging-status"></b><b>charging</b></p>
-						<p>Time Until Fully charged: <b id="battery-charged"></b> minutes.</p>
-						<p>Time Until Fully discharged: <b id="battery-discharged"></b> minutes.</p>
-					</section>
+				<td class="col_check">
+					<p>Battery level: <b id="battery-level"></b></p>
+					<p>Charging status: <b id="charging-status"></b><b></b></p>
+					<p>Minutes - Fully charged: <b id="battery-charged"></b></p>
+					<p>Minutes - Fully discharged: <b id="battery-discharged"></b></p>
+				</td>
+				<td class="col_status">
+					<p id="battery-supported"></p>
 				</td>
 			</tr>
 		</table>
@@ -143,29 +143,34 @@
 	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	
 	<div class="container">
-		<h2>
-			Fullscreen API
-		</h2>
-		
-		<section class="main-content">
-			<p>
-				<button id="view-fullscreen">Fullscreen</button>
-				<button id="cancel-fullscreen">Exit FS</button>
-			</p>
-		
-			<p>Fullscreen state: I'm <b id="fullscreen-state">not </b>fullscreen</p>
-		
-		
-		<h2>Fullscreen for elements</h2>
-		<p>Fullscreen Videos</p>
-		
-		<video id="mario-video" controls width="320">
-			<source src="http://www.archive.org/download/Mario1_507/Mario1_507_512kb.mp4">
-			<source src="http://www.archive.org/download/Mario1_507/Mario1_507.ogv">
-		</video>
-		
-		<button id="video-fullscreen">View fullscreen video</button>
-		</section>
+		<table class="table_view">
+			<tr>
+				<td>
+					Fullscreen API
+				</td>
+				<td>
+					<section class="main-content">
+					<p>
+					<button id="view-fullscreen">Fullscreen</button>
+					<button id="cancel-fullscreen">Exit FS</button>
+					</p>
+					
+					<p>Fullscreen state: I'm <b id="fullscreen-state">not </b>fullscreen</p>
+					
+					
+					<h2>Fullscreen for elements</h2>
+					<p>Fullscreen Videos</p>
+					
+					<video id="mario-video" controls width="320">
+					<source src="http://www.archive.org/download/Mario1_507/Mario1_507_512kb.mp4">
+					<source src="http://www.archive.org/download/Mario1_507/Mario1_507.ogv">
+					</video>
+					
+					<button id="video-fullscreen">View fullscreen video</button>
+				</section>
+				</td>
+			</tr>
+		</table>
 	</div>
 	<script src="js/fullscreen.js"></script>
 	
