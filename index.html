@@ -185,19 +185,28 @@
 	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	
 	<div class="container">
-		<h2>
-			Camera API
-		</h2>
-		<section class="main-content">
-			<p>
-			    <input type="file" id="take-picture" accept="image/*">
-			</p>		
-			<h2>Preview:</h2>
-			<p>
-			    <img src="about:blank" alt="" id="show-picture">
-			</p>		
-			<p id="error"></p>
-		</section>
+		<table class="table_view">
+			<tr>
+				<td>
+				Camera API
+				</td>
+				<td class="col_check">
+					<section class="main-content">
+					<p>
+						<input type="file" id="take-picture" accept="image/*">
+					</p>		
+					<h2>Preview:</h2>
+					<p>
+						<img src="about:blank" alt="" id="show-picture">
+					</p>		
+					<p id="error"></p>
+					</section>
+				</td>
+				<td class="col_status">
+					<p id="camera_status"></p>
+				</td>
+			</tr>
+		</table>
 	</div>
 	<script src="js/camera.js"></script>
 	

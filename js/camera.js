@@ -43,4 +43,12 @@
             }
         };
     }
+    
+    var camera = window.URL.createObjectURL;
+    var cameraStatus = document.getElementById("camera_status");
+    if (camera){
+        cameraStatus.innerHTML = "PASS";
+    }else{
+	    cameraStatus.innerHTML = "FAIL";
+    }
 })();
