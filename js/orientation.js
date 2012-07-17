@@ -1,5 +1,4 @@
 (function () {
-alert("Screen orientation state is " + screen.orientation);
 	var v = $("#phone"); 
 	var scale, angle;
 	var classSet = false;
