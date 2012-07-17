@@ -254,9 +254,9 @@
 		#orientation {border-left: 1px solid rgba(0,0,0,0.2);}
 	</style>
 
-<script>
+	<script>
     function show() {
-      alert("Screen orientation state is " + screen.orientation);
+      alert("Screen orientation state is " + window.screen.orientation);
     }
 
     screen.addEventListener("orientationchange", show, false);
