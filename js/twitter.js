@@ -6,4 +6,7 @@
 		js.src="//platform.twitter.com/widgets.js";
 		fjs.parentNode.insertBefore(js,fjs);
 	}
+	
+	var socialStatus = document.getElementById("social_status");
+	socialStatus.innerHTML = "PASS BY DEFAULT";
 }(document,"script","twitter-wjs");
