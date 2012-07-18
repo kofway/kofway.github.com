@@ -1,20 +1,18 @@
 (function () {
-	var v = $("#phone"); 
-	var scale, angle;
-	var classSet = false;
-	window.addEventListener("deviceorientation", function(e) {
-	if (!classSet) {
-		document.body.classList.add("orientation");
-		classSet = true;
-	}
-	angle = e.gamma + "deg"; scale = (e.beta + 30) / 60;
-	}, true);
+	var oriStatus = document.getElementById("ori_status");
+	var orientation = screen.mozOrientation;
+	var oriDisplay = document.getElementById("ori_display");
 	
-	window.setInterval(function() {
-		v.style.MozTransform = "rotate(" + angle + ") scale(" + scale + ")";
-	}, 100);
-
-
-	screen.mozOrientation;
+    function show() {
+    	if(orientation){
+    		oriDisplay.innerHTML = orientation;
+    		oristatus.innerHTML = "PASS";
+      	}else{
+	      	oriDisplay.innerHTML = "Not Supported";
+    		oristatus.innerHTML = "FAIL";
+      	}
+    }
+    screen.addEventListener("mozorientationchange", show, false);
+    show();
 
 })();

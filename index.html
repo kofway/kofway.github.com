@@ -236,32 +236,24 @@
 	<!--                ORIENTATION                     -->
 	<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->	
 	
-	<div id="orientation" class="container">
+	<div class="container">
 		<table class="table_view">
-		
-			<h2>
-				Orientation
-			</h2>		
-			<img id="phone" src="img/phone.png">
+			<tr>
+			    <td>
+			        Orientation API
+			    </td>
+			    <td class="col_check">
+			        <p id="ori_display"></p>
+			    </td>
+			    <td class="col_status">
+			        <p id="ori_status"></p>
+			    </td>
+			</tr>
 		</table>
-    </div>
-
+	</div>
 	<script src="js/orientation.js"></script>
 
-	<style>
-		#phone { width: 50px;display:block;margin:50px auto; }
-		#orientation {height: 200px}
-		#orientation {border-left: 1px solid rgba(0,0,0,0.2);}
-	</style>
 
-	<script>
-    function show() {
-      alert("Screen orientation state is " + screen.mozOrientation);
-    }
-    screen.addEventListener("mozorientationchange", show, false);
-    
-    show();
-  </script>
 
 </body>
 </html>
