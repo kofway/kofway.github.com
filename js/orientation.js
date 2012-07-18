@@ -6,10 +6,10 @@
     function show() {
     	if(orientation){
     		oriDisplay.innerHTML = orientation;
-    		oristatus.innerHTML = "PASS";
+    		oriStatus.innerHTML = "PASS";
       	}else{
 	      	oriDisplay.innerHTML = "Not Supported";
-    		oristatus.innerHTML = "FAIL";
+    		oriStatus.innerHTML = "FAIL";
       	}
     }
     screen.addEventListener("mozorientationchange", show, false);
