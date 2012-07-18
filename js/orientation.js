@@ -14,4 +14,7 @@
 		v.style.MozTransform = "rotate(" + angle + ") scale(" + scale + ")";
 	}, 100);
 
+
+	screen.mozOrientation;
+
 })();

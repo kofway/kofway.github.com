@@ -256,11 +256,10 @@
 
 	<script>
     function show() {
-      alert("Screen orientation state is " + window.screen.orientation);
+      alert("Screen orientation state is " + screen.mozOrientation);
     }
-
-    screen.addEventListener("orientationchange", show, false);
-
+    screen.addEventListener("mozorientationchange", show, false);
+    
     show();
   </script>
 
