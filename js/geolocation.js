@@ -4,23 +4,23 @@
 		var geoCheck = document.getElementById("geo_check");
 		var geoStatus = document.getElementById("geo_status");
 		if (hasAccepted){
-		if (location) { 
-			geoStatus.innerHTML += "PASS";
-			var coords = location.coords;
-			geo_check.innerHTML += "Coords:" + "<br />"
-			geo_check.innerHTML += "Latitude: " + coords.latitude + "<br />"
-			geo_check.innerHTML += "Longitude: " + coords.longitude + "<br />"
-			geo_check.innerHTML += "Altitude: " + coords.altitude + "<br />"
-			geo_check.innerHTML += "Accuracy: " + coords.accuracy + "<br />"
-			geo_check.innerHTML += "Altitude Accuracy: " + coords.altitudeAccuracy + "<br />"
-			geo_check.innerHTML += "Heading: " + coords.heading + "<br />"
-			geo_check.innerHTML += "Speed: " + coords.speed + "<br />"
+			if (location) { 
+				geoStatus.innerHTML += "PASS";
+				var coords = location.coords;
+				geo_check.innerHTML += "Coords:" + "<br />"
+				geo_check.innerHTML += "Latitude: " + coords.latitude + "<br />"
+				geo_check.innerHTML += "Longitude: " + coords.longitude + "<br />"
+				geo_check.innerHTML += "Altitude: " + coords.altitude + "<br />"
+				geo_check.innerHTML += "Accuracy: " + coords.accuracy + "<br />"
+				geo_check.innerHTML += "Altitude Accuracy: " + coords.altitudeAccuracy + "<br />"
+				geo_check.innerHTML += "Heading: " + coords.heading + "<br />"
+				geo_check.innerHTML += "Speed: " + coords.speed + "<br />"
+			}else{
+				geoStatus.innerHTML += "FAIL";
+				geo_check.innerHTML += "Geolocation not supported."
+			}	
 		}else{
 			geoStatus.innerHTML += "FAIL";
-			geo_check.innerHTML += "Geolocation not supported."
-		}	
-		}else{
-						geoStatus.innerHTML += "FAIL";
 
 		}
 	//code for google map
