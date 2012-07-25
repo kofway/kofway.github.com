@@ -94,6 +94,22 @@ border-radius: 10px;
 box-shadow: 1px 1px 10px #000;
 }
 
+.containerMap {
+width: 90%;
+height: 500px;
+background: #fff;
+border: 1px solid #ccc;
+border-top: none;
+margin: 20px auto;
+padding: 20px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
+-moz-box-shadow: 1px 1px 10px #000;
+-webkit-box-shadow: 1px 1px 5px #000;
+box-shadow: 1px 1px 10px #000;
+}
+
 @media screen and (max-width: 320px) {
     #container {
         width: 280px;
