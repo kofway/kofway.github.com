@@ -8,5 +8,5 @@
 	}
 	
 	var socialStatus = document.getElementById("social_status");
-	socialStatus.innerHTML = "PASS BY DEFAULT";
+	socialStatus.innerHTML = "PASS";
 }(document,"script","twitter-wjs");
