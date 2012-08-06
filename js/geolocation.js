@@ -1,11 +1,11 @@
 (function () {
 	var hasAccepted = false;
+	var geoCheck = document.getElementById("geo_check");
+	var geoStatus = document.getElementById("geo_status");
 	function check_geolocation(location) {
-		var geoCheck = document.getElementById("geo_check");
-		var geoStatus = document.getElementById("geo_status");
 		if (hasAccepted){
 			if (location) { 
-				geoStatus.innerHTML += "PASS";
+				geoStatus.innerHTML = "PASS";
 				var coords = location.coords;
 				geoCheck.innerHTML += "Coords:" + "<br />"
 				geoCheck.innerHTML += "Latitude: " + coords.latitude + "<br />"
@@ -20,7 +20,7 @@
 				geoCheck.innerHTML += "Geolocation not supported."
 			}	
 		}else{
-			geoStatus.innerHTML += "FAIL";
+			geoStatus.innerHTML = "FAIL";
 
 		}
 	//code for google map
@@ -35,7 +35,7 @@
 	function accept() {
 		hasAccepted = true;
 	}
-	
+	geoStatus.innerHTML = "FAIL";
 	navigator.geolocation.getCurrentPosition(successCallback, null, null);
 	setTimeout(accept, 50);
         
