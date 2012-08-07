@@ -45,13 +45,13 @@
 	    
 	    //add ignoreTimezone alarm
 		var alarmId1;
-		var request = navigator.mozAlarms.add(new Date("May 15, 2012 16:20:00"), "ignoreTimezone", { mydata: "bar" });
+		var request = navigator.mozAlarms.add(new Date("May 13, 2012 17:07:00"), "ignoreTimezone", { mydata: "bar" });
 		request.onsuccess = function (e) { alarmId1 = e.target.result; };
 		request.onerror = function (e) { alert(e.target.error.name); };	    
 		
 		//add honorTimezone alarm
 		var alarmId2;
-		var request = navigator.mozAlarms.add(new Date("June 29, 2012 07:30:00"), "honorTimezone", { mydata: "foo" });
+		var request = navigator.mozAlarms.add(new Date("July 1, 2012 07:37:00"), "honorTimezone", { mydata: "foo" });
 		request.onsuccess = function (e) { alarmId2 = e.target.result; };
 		request.onerror = function (e) { alert(e.target.error.name); };
 	    
