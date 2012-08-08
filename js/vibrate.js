@@ -1,6 +1,6 @@
 (function () {
     document.querySelector("#vibrate_on").addEventListener("click", function () {
-    console.log("vib button press");
+    	console.log("vib button press");
         navigator.mozVibrate(1000);
     }, false);
     
