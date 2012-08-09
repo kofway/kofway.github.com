@@ -1,21 +1,14 @@
 (function () {
     var battery = navigator.mozBattery,
-        batterySupported = document.getElementById("battery-supported"),
-        batteryLevel = document.getElementById("battery-level"),
-        chargingStatus = document.getElementById("charging-status"),
-        batteryCharged = document.getElementById("battery-charged"),
-        batteryDischarged = document.getElementById("battery-discharged");
-
-    console.log(battery);
+        batteryStatus = document.getElementById("battery_status"),
+        batteryCheck = document.getElementById("battery_check");
 
     if (battery) {
         function setStatus () {
             console.log("Set status");
-            batterySupported.innerHTML = "PASS";
-            batteryLevel.innerHTML = Math.round(battery.level * 100) + "%";
-            chargingStatus.innerHTML = (battery.charging)? "Yes" : "No";
-            batteryCharged.innerHTML = (battery.chargingTime == "Infinity")? "Infinity" : parseInt(battery.chargingTime / 60, 10);
-            batteryDischarged.innerHTML = (battery.dischargingTime == "Infinity")? "Infinity" : parseInt(battery.dischargingTime / 60, 10);
+            batteryStatus.innerHTML = "PASS";
+            batteryCheck.innerHTML += "Charging? " + battery.charging + "<br />";
+            batteryCheck.innerHTML += "Battery level: " + (battery.level)*100 + "%<br />";
         }
         // Set initial status
         setStatus();
@@ -26,10 +19,7 @@
         battery.addEventListener("dischargingtimechange", setStatus, false);
     }
     else {
-        batterySupported.innerHTML = "FAIL";
-        batteryLevel.innerHTML = "Battery API Unavailable";
-        chargingStatus.innerHTML = "Battery API Unavailable";
-        batteryCharged.innerHTML = "Battery API Unavailable";
-        batteryDischarged.innerHTML = "Battery API Unavailable";
+        batteryStatus.innerHTML = "FAIL";
+        batteryCheck.innerHTML = "Battery API Unavailable";
     }
 })();
