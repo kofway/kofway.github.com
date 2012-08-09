@@ -12,7 +12,9 @@
     }
         
     if (idle){
-        idleStatus.innerHTML = "PASS";
+        idleStatus.innerHTML = "PASS" + "<br/>";
+        idleStatus.innerHTML += "Operation Insecure";
+        
     }else{
 	    idleStatus.innerHTML = "FAIL";
     }
