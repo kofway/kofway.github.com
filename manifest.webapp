@@ -8,12 +8,11 @@
         "url": "http://mozillalabs.com"  
       },  
       "installs_allowed_from": ["*"],  
-            "default_locale": "en"  
             
       "icons": {
       		"16": "/img/online.png",
       		"48": "/img/online.png",
       		"128": "/img/online.png"
-  },
+      		}
       
 }

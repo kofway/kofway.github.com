@@ -8,7 +8,7 @@
 		    installStatus.innerHTML = "PASS";
 	    }  
 	    request.onerror = function() {  
-	    	console.log("install error");
+	    	console.log("install error"+ request.error.name);
 	     	installStatus.innerHTML = "FAIL";
 	    }      
     }, false);
