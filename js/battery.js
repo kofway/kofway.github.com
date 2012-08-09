@@ -1,5 +1,5 @@
 (function () {
-    var battery = navigator.mozBattery,
+    var battery = navigator.battery,
         batteryStatus = document.getElementById("battery_status"),
         batteryCheck = document.getElementById("battery_check");
 

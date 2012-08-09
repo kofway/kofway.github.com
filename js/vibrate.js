@@ -1,14 +1,14 @@
 (function () {
     document.querySelector("#vibrate_on").addEventListener("click", function () {
     	console.log("vib button press");
-        navigator.mozVibrate(1000);
+        navigator.vibrate(1000);
     }, false);
     
     document.querySelector("#vibrate_off").addEventListener("click", function () {
-        navigator.mozVibrate(0);
+        navigator.vibrate(0);
     }, false);
     
-    var vib = navigator.mozVibrate;
+    var vib = navigator.vibrate;
     var vibStatus = document.getElementById("vib_status");
     if (vib){
         vibStatus.innerHTML = "PASS";

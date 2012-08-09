@@ -13,7 +13,7 @@
         
     if (idle){
         idleStatus.innerHTML = "PASS" + "<br/>";
-        idleStatus.innerHTML += "Operation Insecure";
+        idleCheck.innerHTML += "navigator.addIdleObserver(): Operation Insecure";
         
     }else{
 	    idleStatus.innerHTML = "FAIL";
