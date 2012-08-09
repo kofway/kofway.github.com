@@ -9,7 +9,6 @@
 
     function activeHandler() {
     	idleCheck.innerHTML = "Active";
-	    
     }
         
     if (idle){
