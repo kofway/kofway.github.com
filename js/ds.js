@@ -34,7 +34,7 @@ devicestorage_cleanup();
 
 	
 	
-	/*function dstest() { 
+	function dstest() { 
 		//var request = ds[0].addNamed(googletest, "https://www.google.com/images/srpr/logo3w.png");
 	    if (ds){
 	        dsStatus.innerHTML = "PASS";
@@ -43,6 +43,6 @@ devicestorage_cleanup();
 	    }
     }
     
-    dstest();*/
-    dsStatus.innerHTML = "FAIL";
+    dstest();
+    //dsStatus.innerHTML = "FAIL";
 })();
