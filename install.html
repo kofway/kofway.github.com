@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title>Web API Installer</title>
+  <link rel="stylesheet" href="css/base.css" type="text/css" media="screen">
+</head>
+
+<!-- This is a webapp to test the WebAPI functions provided by mozilla firefox. -->
+
+<script>
+
+function installApp() {
+  var uri = "http://kofway.github.com/manifest.webapp";
+  var request = window.navigator.mozApps.install(uri, null);
+  request.onerror = function(e) {
+    alert("Error installing app : " + request.error.name);
+  }
+  request.onsuccess = function(e) {
+    alert("Success installing app : " + request.result.manifest.name);
+  }
+}
+
+function getInstalled() {
+  var request = window.navigator.mozApps.getInstalled();
+  request.onerror = function(e) {
+    alert("Error calling getInstalled : " + request.error.name);
+  }
+  request.onsuccess = function(e) {
+    alert("Success number of apps : " + request.result.length);
+  }
+}
+
+function launchApp() {
+  var request = window.navigator.mozApps.getInstalled();
+  request.onerror = function(e) {
+    alert("Error calling getInstalled : " + request.error.name);
+  }
+  request.onsuccess = function(e) {
+    request.result[0].launch();
+  } 
+}
+
+function uninstallApp() {
+  var request = window.navigator.mozApps.getInstalled();
+  request.onerror = function(e) {
+    alert("Error calling getInstalled : " + request.error.name);
+  }
+  request.onsuccess = function(e) {
+    request.result[0].uninstall().onsuccess = function() { alert("Uninstalled OK"); };
+  } 
+}
+
+</script>
+ </head>
+ <body onload="test()">
+<center>
+<h1>WebAPI Testing</h1>
+<p>
+<ul> 
+<li>
+  Install Web API App <button onclick="installApp()">Install</button>
+</li>
+
+<li>
+  Get Installed Apps
+  <button onclick="getInstalled()">Get</button>
+</li>
+
+<li>
+  Uninstall Web API App
+  <button onclick="uninstallApp()">Uninstall</button>
+</li>
+
+<li>
+  Launch Web API App
+  <button onclick="launchApp()">Launch</button>
+</li>
+</ul>
+</center>
+
+ </body>
+</html>
+
