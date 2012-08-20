@@ -7,7 +7,7 @@
         function setStatus () {
             console.log("Set status");
             batteryStatus.innerHTML = "PASS";
-            batteryCheck.innerHTML += "Charging? " + battery.charging + "<br />";
+            batteryCheck.innerHTML = "Charging? " + battery.charging + "<br />";
             batteryCheck.innerHTML += "Battery level: " + (battery.level)*100 + "%<br />";
         }
         // Set initial status
