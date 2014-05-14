@@ -65,7 +65,7 @@ text-decoration: underline;
 
 html {
 color: #000;
-background: #09a8eb;
+background: #a0d8ef;
 min-height: 100%;	
 }
 
@@ -81,7 +81,7 @@ ul {
 /* Structure */
 .container {
 width: 80%;
-background: #fff;
+background: #e6eae3;
 border: 1px solid #ccc;
 border-top: none;
 margin: 20px auto;
