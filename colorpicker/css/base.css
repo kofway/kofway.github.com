@@ -87,13 +87,12 @@ button {
 width: 130px;
 height: 130px;
 vertical-align: middle;
-background: #e6eae3;
-border: 1px solid #a0d8ef;
+/*border: 1px solid #a0d8ef;*/
 border-top: none;
 margin: 20px auto;
 padding: 20px;
 border-radius: 10px;
-box-shadow: 1px 1px 10px #507ea4;
+box-shadow: 1px 1px 10px #ffffff;
 }
 
 .icon_view{
@@ -101,7 +100,6 @@ text-align: center;
 }
 /* style="text-align:center" */
 .icon_table{
-align: center;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
