@@ -4,6 +4,7 @@
 		var cname = document.getElementById(divname.id+'c');
 		var jname = document.getElementById(divname.id+'j');
 		var ename = document.getElementById(divname.id+'e');
+		var link = document.getElementById(divname.id+'a');
 		var colorCode = cmap[colorName].o;
 		
 		// assign color properties to page elements
@@ -16,6 +17,7 @@
 		} else {
 			divname.style.color = "#000000";
 		}
+		link.title = colorCode.toUpperCase() + ": " + cname.innerHTML +"色";
 	}
 
 	// hash table for color properties
