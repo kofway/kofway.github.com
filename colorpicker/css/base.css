@@ -82,6 +82,10 @@ button {
     margin-bottom: 20px;
 }
 
+p {
+font-size:small;
+}
+
 /* New Structure */
 .main_container{
 width: 100%;
@@ -89,8 +93,8 @@ width: 100%;
 
 }
 .container {
-width: 130px;
-height: 130px;
+width: 100px;
+height: 100px;
 vertical-align: middle;
 /*border: 1px solid #a0d8ef;*/
 border-top: none;
