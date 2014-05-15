@@ -56,11 +56,12 @@ vertical-align: middle;
 
 /* Custom Settings */
 a {
-color: #2a4073;
+text-decoration: none;
+color: inherit;
 }
 
 a:hover {
-color: #165e83;
+
 }
 
 html {

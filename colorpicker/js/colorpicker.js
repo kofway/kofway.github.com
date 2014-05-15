@@ -11,10 +11,10 @@
 		jname.innerHTML = cmap[colorName].j;
 		ename.innerHTML = cmap[colorName].e;
 		divname.style.backgroundColor = colorCode;
-		if (cmap[colorName.f] != 0){
-			divname.style.color = "#000000";
-		} else {
+		if (cmap[colorName].f == 'b'){
 			divname.style.color = "#FFFFFF";
+		} else {
+			divname.style.color = "#000000";
 		}
 	}
 
@@ -25,21 +25,21 @@
 		cmap.grapeRat.j = "ぶどうねずみ";
 		cmap.grapeRat.e = "Grape<br>Rat";
 		cmap.grapeRat.o = "#705b67";
-		cmap.grapeRat.f = "0";
+		cmap.grapeRat.f = "b";
 		
 		cmap.lightSakura = new Object();
 		cmap.lightSakura.c = "薄桜";
 		cmap.lightSakura.j = "うすざくら";
 		cmap.lightSakura.e = "Light<br>Sakura";
 		cmap.lightSakura.o = "#fdeff2";
-		cmap.lightSakura.f = "1";	
+		cmap.lightSakura.f = "w";	
 
 		cmap.moeYellow = new Object();
 		cmap.moeYellow.c = "萌黄";
 		cmap.moeYellow.j = "もえぎ";
 		cmap.moeYellow.e = "Moe<br>Yellow";
 		cmap.moeYellow.o = "#aacf53";
-		cmap.moeYellow.f = "1";	
+		cmap.moeYellow.f = "w";	
 
 	
 	assignColor(c11, "grapeRat");
