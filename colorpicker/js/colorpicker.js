@@ -18,6 +18,7 @@
 			divname.style.color = "#000000";
 		}
 		link.title = colorCode.toUpperCase() + ": " + cname.innerHTML +"色";
+		link.href = "img/" + colorName + ".jpg";
 	}
 
 	// hash table for color properties
