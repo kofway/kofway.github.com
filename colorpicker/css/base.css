@@ -96,13 +96,11 @@ width: 100%;
 width: 80px;
 height: 70px;
 vertical-align: middle;
-/*border: 1px solid #a0d8ef;*/
-border-top: none;
-margin: 20px auto;
+margin: 3px;
 padding: 10px;
-border-radius: 10px;
+border-radius: 25px;
 box-shadow: 1px 1px 15px #ffffff;
-display:inline-block
+display:inline-block;
 }
 
 .icon_view{
