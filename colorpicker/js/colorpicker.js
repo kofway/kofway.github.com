@@ -5,7 +5,16 @@
 	cmap.c11e = "Grape Rat";
 	cmap.c11o = "#705b67";
 	cmap.c11f = "0";
-	
+	cmap.c12c = "薄桜";
+	cmap.c12j = "うすざくら";
+	cmap.c12e = "Light Sakura";
+	cmap.c12o = "#fdeff2";
+	cmap.c12f = "1";
+	cmap.c13c = "萌黄";
+	cmap.c13j = "もえぎ";
+	cmap.c13e = "Moe Yellow";
+	cmap.c13o = "#aacf53";
+	cmap.c13f = "1";
 
 	// function to assign color properties to page elements
 	function assignColor(divname){
@@ -29,5 +38,7 @@
 	}
 	
 	assignColor(c11);
+	assignColor(c12);
+	assignColor(c13);
 
 
