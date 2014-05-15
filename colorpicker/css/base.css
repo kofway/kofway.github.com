@@ -106,8 +106,12 @@ box-shadow: 1px 1px 10px #ffffff;
 
 .icon_view{
 text-align:center;
-width: 90px;
-height: 20px;
+}
+
+.icon_table{
+padding: 0px;
+margin: 0px;
+height: 100%;
 }
 
 /* iPhone 5/5s (portrait and landscape) ----------- */
