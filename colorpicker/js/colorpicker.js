@@ -1,22 +1,33 @@
-
-    var c11c = document.getElementById("c11c");
-	var c11j = document.getElementById("c11j");
-	var c11e = document.getElementById("c11e");
-	var c11d = document.getElementById("c11d");
-	
-	
+	// hash table for color properties
 	var cmap = new Object();
 	cmap.c11c = "葡萄鼠";
 	cmap.c11j = "ぶどうねずみ";
+	cmap.c11e = "Grape Rat";
+	cmap.c11o = "#705b67";
+	cmap.c11f = "0";
 	
-	function assignColor(cname, jname, ename, divname){
-		window.alert(c11d.childNodes[0].hasChildNodes());
-		cname.innerHTML = cmap['c11c'];
-		jname.innerHTML="ぶどうねずみ";
-		ename.innerHTML="Grape Rat";
-		divname.style.backgroundColor="#705b67";
-		divname.style.color="#ffffff";
+
+	// function to assign color properties to page elements
+	function assignColor(divname){
+		// assign page fields to var
+		var cname = document.getElementById(divname.id+'c');
+		var jname = document.getElementById(divname.id+'j');
+		var ename = document.getElementById(divname.id+'e');
+		var colorCode = cmap[divname.id+'o'];
+		
+		// assign color properties to page fields
+		cname.innerHTML = cmap[cname.id];
+		jname.innerHTML = cmap[jname.id];
+		ename.innerHTML = cmap[ename.id];
+		divname.style.backgroundColor = colorCode;
+		if (cmap[divname.id+'f'] != 0){
+			divname.style.color = "#000000";
+		} else {
+			divname.style.color = "#FFFFFF";
+		}
+		
 	}
 	
-	assignColor(c11c, c11j, c11e, c11d);
+	assignColor(c11);
+
 

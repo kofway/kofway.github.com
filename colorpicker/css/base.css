@@ -83,6 +83,11 @@ button {
 }
 
 /* New Structure */
+.main_container{
+width: 630px;
+
+
+}
 .container {
 width: 130px;
 height: 130px;
