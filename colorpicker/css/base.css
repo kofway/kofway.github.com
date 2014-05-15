@@ -84,56 +84,45 @@ button {
 
 p {
 font-size:small;
+margin:1px;
 }
 
 /* New Structure */
 .main_container{
 width: 100%;
-
-
 }
+
 .container {
-width: 100px;
-height: 100px;
+width: 79px;
+height: 80px;
 vertical-align: middle;
 /*border: 1px solid #a0d8ef;*/
 border-top: none;
 margin: 20px auto;
-padding: 20px;
+padding: 10px;
 border-radius: 10px;
 box-shadow: 1px 1px 10px #ffffff;
 }
 
 .icon_view{
-text-align: center;
-}
-/* style="text-align:center" */
-.icon_table{
+text-align:center;
+width: 90px;
+height: 20px;
 }
 
-/* Smartphones (portrait and landscape) ----------- */
+/* iPhone 5/5s (portrait and landscape) ----------- */
 @media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
+and (min-device-width : 640px) 
+and (max-device-width : 1136px) {
 }
 
-/* Smartphones (landscape) ----------- */
-@media only screen 
-and (min-width : 321px) {
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen 
-and (max-width : 320px) {
-}
-
-/* iPads (portrait and landscape) ----------- */
+/* iPad 2 (portrait and landscape) ----------- */
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) {
 }
 
-/* iPads (landscape) ----------- */
+/* iPad 2 (landscape) ----------- */
 @media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
