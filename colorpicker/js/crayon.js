@@ -99,7 +99,7 @@
 		cmap.ripeTango = new Object();
 		cmap.ripeTango.c = "芒果";
 		cmap.ripeTango.j = "マンゴー";
-		cmap.ripeTango.e = "Ripe<br>Mango";
+		cmap.ripeTango.e = "<br>Mango";
 		cmap.ripeTango.o = "#FF8243";
 		cmap.ripeTango.f = "w";
 	
@@ -108,31 +108,79 @@
 		cmap.lemonYellow.j = "レモン";
 		cmap.lemonYellow.e = "Lemon<br>Yellow";
 		cmap.lemonYellow.o = "#FFF44F";
-		cmap.lemonYellow.f = "w";
+		cmap.lemonYellow.f = "b";
 
 		cmap.canaryYellow = new Object();
 		cmap.canaryYellow.c = "金丝雀";
 		cmap.canaryYellow.j = "カナリア";
 		cmap.canaryYellow.e = "Canary<br>Yellow";
 		cmap.canaryYellow.o = "#FFFF99";
-		cmap.canaryYellow.f = "w";
+		cmap.canaryYellow.f = "b";
 
+		cmap.tangerineOrange = new Object();
+		cmap.tangerineOrange.c = "橘子";
+		cmap.tangerineOrange.j = "タンジェリン";
+		cmap.tangerineOrange.e = "Tangerine<br>Orange";
+		cmap.tangerineOrange.o = "#FFA474";
+		cmap.tangerineOrange.f = "w";
+
+		cmap.inchworm = new Object();
+		cmap.inchworm.c = "尺蠖";
+		cmap.inchworm.j = "尺取り虫";
+		cmap.inchworm.e = "<br>Inchworm";
+		cmap.inchworm.o = "#B2EC5D";
+		cmap.inchworm.f = "w";
+		
+		cmap.grannyApple = new Object();
+		cmap.grannyApple.c = "澳洲青苹果";
+		cmap.grannyApple.j = "グラニースミス";
+		cmap.grannyApple.e = "Granny<br>Apple";
+		cmap.grannyApple.o = "#A8E4A0";
+		cmap.grannyApple.f = "w";
+	
+		cmap.plum = new Object();
+		cmap.plum.c = "李子";
+		cmap.plum.j = "梅";
+		cmap.plum.e = "Vivid<br>Plum";
+		cmap.plum.o = "#8E4585";
+		cmap.plum.f = "w";	
+		
+		cmap.denim = new Object();
+		cmap.denim.c = "牛仔";
+		cmap.denim.j = "デニム";
+		cmap.denim.e = "<br>Denim";
+		cmap.denim.o = "#2B6CC4";
+		cmap.denim.f = "w";	
+		
+		cmap.cerise = new Object();
+		cmap.cerise.c = "樱桃";
+		cmap.cerise.j = "サクランボ";
+		cmap.cerise.e = "Cerise<br>Red";
+		cmap.cerise.o = "#DD4492";
+		cmap.cerise.f = "w";	
+
+		cmap.indigo = new Object();
+		cmap.indigo.c = "靛青";
+		cmap.indigo.j = "インディゴ";
+		cmap.indigo.e = "<br>Indigo";
+		cmap.indigo.o = "#5D76CB";
+		cmap.indigo.f = "w";			
 		
 	assignColor(c1, "violetRed");
 	assignColor(c2, "brickRed");
 	assignColor(c3, "burntSienna");
-	assignColor(c4, "ripeTango");
-	assignColor(c5, "yellowOrange");
-	assignColor(c6, "sunGlow");
-	assignColor(c7, "lemonYellow");
-	assignColor(c8, "canaryYellow");
-	assignColor(c9, "yellowGreen");
-	assignColor(c10, "caribbeanGreen");
-	assignColor(c11, "blizzardBlue");
-	assignColor(c12, "skyBlue");
+	assignColor(c4, "tangerineOrange");
+	assignColor(c5, "ripeTango");
+	assignColor(c6, "yellowOrange");
+	assignColor(c7, "sunGlow");
+	assignColor(c8, "lemonYellow");
+	assignColor(c9, "canaryYellow");
+	assignColor(c10, "yellowGreen");
+	assignColor(c11, "inchworm");
+	assignColor(c12, "grannyApple");
 	assignColor(c13, "caribbeanGreen");
-	assignColor(c14, "caribbeanGreen");
-	assignColor(c15, "caribbeanGreen");
-	assignColor(c16, "caribbeanGreen");
-	assignColor(c17, "caribbeanGreen");
-	assignColor(c18, "caribbeanGreen");
+	assignColor(c14, "skyBlue");
+	assignColor(c15, "denim");
+	assignColor(c16, "indigo");
+	assignColor(c17, "plum");
+	assignColor(c18, "cerise");
