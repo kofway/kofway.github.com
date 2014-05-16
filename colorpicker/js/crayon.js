@@ -36,7 +36,7 @@
 		cmap.skyBlue.j = "空色";
 		cmap.skyBlue.e = "Sky<br>Blue";
 		cmap.skyBlue.o = "#80DAEB";
-		cmap.skyBlue.f = "b";
+		cmap.skyBlue.f = "w";
 		
 		cmap.yellowOrange = new Object();
 		cmap.yellowOrange.c = "橙黄";
@@ -50,35 +50,35 @@
 		cmap.yellowGreen.j = "黄緑";
 		cmap.yellowGreen.e = "Yellow<br>Green";
 		cmap.yellowGreen.o = "#C5E384";
-		cmap.yellowGreen.f = "b";	
+		cmap.yellowGreen.f = "w";	
 		
 		cmap.caribbeanGreen = new Object();
 		cmap.caribbeanGreen.c = "加勒比绿";
 		cmap.caribbeanGreen.j = "カリビアン緑";
 		cmap.caribbeanGreen.e = "Caribbean<br>Green";
 		cmap.caribbeanGreen.o = "#00CC99";
-		cmap.caribbeanGreen.f = "b";
+		cmap.caribbeanGreen.f = "w";
 		
 		cmap.blizzardBlue = new Object();
 		cmap.blizzardBlue.c = "暴雪蓝";
 		cmap.blizzardBlue.j = "暴風雪青";
 		cmap.blizzardBlue.e = "Blizzard<br>Blue";
 		cmap.blizzardBlue.o = "#ACE5EE";
-		cmap.blizzardBlue.f = "b";
+		cmap.blizzardBlue.f = "w";
 		
 		cmap.violetRed = new Object();
 		cmap.violetRed.c = "紫红";
 		cmap.violetRed.j = "紫赤";
 		cmap.violetRed.e = "Violet<br>Red";
 		cmap.violetRed.o = "#F75394";
-		cmap.violetRed.f = "b";
+		cmap.violetRed.f = "w";
 		
 		cmap.sunGlow = new Object();
 		cmap.sunGlow.c = "阳光";
 		cmap.sunGlow.j = "太陽の輝";
 		cmap.sunGlow.e = "Sun<br>Glow";
 		cmap.sunGlow.o = "#FFCF48";
-		cmap.sunGlow.f = "b";
+		cmap.sunGlow.f = "w";
 
 	
 	assignColor(c1, "skyBlue");
