@@ -134,7 +134,7 @@
 		cmap.grannyApple = new Object();
 		cmap.grannyApple.c = "澳洲青苹果";
 		cmap.grannyApple.j = "グラニースミス";
-		cmap.grannyApple.e = "Granny<br>Apple";
+		cmap.grannyApple.e = "Apple";
 		cmap.grannyApple.o = "#A8E4A0";
 		cmap.grannyApple.f = "w";
 	
