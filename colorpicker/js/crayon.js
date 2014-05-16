@@ -80,11 +80,59 @@
 		cmap.sunGlow.o = "#FFCF48";
 		cmap.sunGlow.f = "w";
 
+		cmap.brickRed = new Object();
+		cmap.brickRed.c = "砖红";
+		cmap.brickRed.j = "赤レンガ";
+		cmap.brickRed.e = "Brick<br>Red";
+		cmap.brickRed.o = "#CB4154";
+		cmap.brickRed.f = "w";
+		
+		//81D8D0 tiff
+		
+		cmap.burntSienna = new Object();
+		cmap.burntSienna.c = "赤褐";
+		cmap.burntSienna.j = "赭";
+		cmap.burntSienna.e = "Burnt<br>Sienna";
+		cmap.burntSienna.o = "#EA7E5D";
+		cmap.burntSienna.f = "w";
+
+		cmap.ripeTango = new Object();
+		cmap.ripeTango.c = "芒果";
+		cmap.ripeTango.j = "マンゴー";
+		cmap.ripeTango.e = "Ripe<br>Mango";
+		cmap.ripeTango.o = "#FF8243";
+		cmap.ripeTango.f = "w";
 	
-	assignColor(c1, "skyBlue");
-	assignColor(c2, "yellowOrange");
-	assignColor(c3, "yellowGreen");
-	assignColor(c4, "caribbeanGreen");
-	assignColor(c5, "blizzardBlue");
-	assignColor(c6, "violetRed");
-	assignColor(c7, "sunGlow");
+		cmap.lemonYellow = new Object();
+		cmap.lemonYellow.c = "柠檬黄";
+		cmap.lemonYellow.j = "レモン";
+		cmap.lemonYellow.e = "Lemon<br>Yellow";
+		cmap.lemonYellow.o = "#FFF44F";
+		cmap.lemonYellow.f = "w";
+
+		cmap.canaryYellow = new Object();
+		cmap.canaryYellow.c = "金丝雀";
+		cmap.canaryYellow.j = "カナリア";
+		cmap.canaryYellow.e = "Canary<br>Yellow";
+		cmap.canaryYellow.o = "#FFFF99";
+		cmap.canaryYellow.f = "w";
+
+		
+	assignColor(c1, "violetRed");
+	assignColor(c2, "brickRed");
+	assignColor(c3, "burntSienna");
+	assignColor(c4, "ripeTango");
+	assignColor(c5, "yellowOrange");
+	assignColor(c6, "sunGlow");
+	assignColor(c7, "lemonYellow");
+	assignColor(c8, "canaryYellow");
+	assignColor(c9, "yellowGreen");
+	assignColor(c10, "caribbeanGreen");
+	assignColor(c11, "blizzardBlue");
+	assignColor(c12, "skyBlue");
+	assignColor(c13, "caribbeanGreen");
+	assignColor(c14, "caribbeanGreen");
+	assignColor(c15, "caribbeanGreen");
+	assignColor(c16, "caribbeanGreen");
+	assignColor(c17, "caribbeanGreen");
+	assignColor(c18, "caribbeanGreen");
