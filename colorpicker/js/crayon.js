@@ -169,8 +169,8 @@
 	assignColor(c1, "violetRed");
 	assignColor(c2, "brickRed");
 	assignColor(c3, "burntSienna");
-	assignColor(c4, "tangerineOrange");
-	assignColor(c5, "ripeMango");
+	assignColor(c4, "ripeMango");
+	assignColor(c5, "tangerineOrange");
 	assignColor(c6, "yellowOrange");
 	assignColor(c7, "sunGlow");
 	assignColor(c8, "lemonYellow");
