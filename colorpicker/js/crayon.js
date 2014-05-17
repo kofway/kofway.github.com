@@ -18,7 +18,7 @@
 			divname.style.color = "#FFFFFF";
 		}
 		link.title = colorCode.toUpperCase() + ": " + cname.innerHTML +"色";
-		link.href = "img/crayon/" + colorName + ".jpg";
+		link.href = "img/crayon/" + colorName + "_c.jpg";
 	}
 
 	// hash table for color properties
@@ -96,12 +96,12 @@
 		cmap.burntSienna.o = "#EA7E5D";
 		cmap.burntSienna.f = "w";
 
-		cmap.ripeTango = new Object();
-		cmap.ripeTango.c = "芒果";
-		cmap.ripeTango.j = "マンゴー";
-		cmap.ripeTango.e = "<br>Mango";
-		cmap.ripeTango.o = "#FF8243";
-		cmap.ripeTango.f = "w";
+		cmap.ripeMango = new Object();
+		cmap.ripeMango.c = "芒果";
+		cmap.ripeMango.j = "マンゴー";
+		cmap.ripeMango.e = "<br>Mango";
+		cmap.ripeMango.o = "#FF8243";
+		cmap.ripeMango.f = "w";
 	
 		cmap.lemonYellow = new Object();
 		cmap.lemonYellow.c = "柠檬黄";
@@ -170,7 +170,7 @@
 	assignColor(c2, "brickRed");
 	assignColor(c3, "burntSienna");
 	assignColor(c4, "tangerineOrange");
-	assignColor(c5, "ripeTango");
+	assignColor(c5, "ripeMango");
 	assignColor(c6, "yellowOrange");
 	assignColor(c7, "sunGlow");
 	assignColor(c8, "lemonYellow");
