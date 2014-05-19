@@ -14,9 +14,9 @@
 		//divname.style.backgroundColor = colorCode;
 
 		// manipulating css statement: 
-		// background: #eee url('img/irojiten/colors/orchidPink_c.jpg') center center;
+		// background: url('img/irojiten/colors/orchidPink_c.jpg') center center;
 		// only display the middle of image
-		var attr = "background: url('img/irojiten/colors/" + colorName+ "_c.jpg') center center; background-size: 120% 120%";
+		var attr = "background: url('img/irojiten/colors/" + colorName + "_c.jpg') center center; background-size: 140% 140%";
 		divname.setAttribute("style", attr);
 		if (cmap[colorName].f == 'b'){
 			divname.style.color = "#000000";
