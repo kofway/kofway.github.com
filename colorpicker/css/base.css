@@ -157,6 +157,16 @@ background-size: contain;
 background-repeat: no-repeat;
 }
 
+.container_index{
+width: 93%;
+height: 70px;
+vertical-align: middle;
+margin: 5px 0px 5px 0px;
+padding: 10px;
+border-radius: 25px;
+box-shadow: 1px 1px 15px #ffffff;
+display:inline-block;
+}
 
 
 /* iPhone 5/5s (portrait and landscape) ----------- */
