@@ -91,9 +91,125 @@
 		cmap.pigeonGrey.e = "<br>Pigeon<br>Grey";
 		cmap.pigeonGrey.f = "w";	
 
+		cmap.cherryRed = new Object();
+		cmap.cherryRed.c = " ";
+		cmap.cherryRed.j = "チェリー";
+		cmap.cherryRed.e = "<br>Cherry<br>Red";
+		cmap.cherryRed.f = "w";	
 
+		cmap.tangerineOrange = new Object();
+		cmap.tangerineOrange.c = " ";
+		cmap.tangerineOrange.j = "蜜柑色";
+		cmap.tangerineOrange.e = "<br>Tangerine<br>Orange";
+		cmap.tangerineOrange.f = "w";	
 
+		cmap.dandelion = new Object();
+		cmap.dandelion.c = " ";
+		cmap.dandelion.j = "蒲公英";
+		cmap.dandelion.e = "<br>Dandelion";
+		cmap.dandelion.f = "w";	
+		
+		cmap.chartreuseGreen = new Object();
+		cmap.chartreuseGreen.c = " ";
+		cmap.chartreuseGreen.j = "シャルトルーズ緑";
+		cmap.chartreuseGreen.e = "Chartreuse<br>Green";
+		cmap.chartreuseGreen.f = "w";			
+		
+		cmap.parrotGreen = new Object();
+		cmap.parrotGreen.c = " ";
+		cmap.parrotGreen.j = "鸚鵡緑";
+		cmap.parrotGreen.e = "<br>Parrot<br>Green";
+		cmap.parrotGreen.f = "w";			
+		
+		cmap.peacockBlue = new Object();
+		cmap.peacockBlue.c = " ";
+		cmap.peacockBlue.j = "孔雀青";
+		cmap.peacockBlue.e = "<br>Peacock<br>Blue";
+		cmap.peacockBlue.f = "w";			
+		
+		cmap.kingFisher = new Object();
+		cmap.kingFisher.c = " ";
+		cmap.kingFisher.j = "川蝉色";
+		cmap.kingFisher.e = "<br>Kingfisher";
+		cmap.kingFisher.f = "w";			
+		
+		cmap.lapisLazuli = new Object();
+		cmap.lapisLazuli.c = " ";
+		cmap.lapisLazuli.j = "瑠璃色";
+		cmap.lapisLazuli.e = "<br>Lapis<br>Lazuli";
+		cmap.lapisLazuli.f = "w";	
 
+		cmap.irisViolet = new Object();
+		cmap.irisViolet.c = " ";
+		cmap.irisViolet.j = "菖蒲色";
+		cmap.irisViolet.e = "<br>Iris<br>Violet";
+		cmap.irisViolet.f = "w";	
+		
+		cmap.crimson = new Object();
+		cmap.crimson.c = " ";
+		cmap.crimson.j = "洋紅";
+		cmap.crimson.e = "<br>Crimson<br>Red";
+		cmap.crimson.f = "w";	
+
+		cmap.chestnutBrown = new Object();
+		cmap.chestnutBrown.c = " ";
+		cmap.chestnutBrown.j = "栗色";
+		cmap.chestnutBrown.e = "<br>Chestnut<br>Brown";
+		cmap.chestnutBrown.f = "w";	
+
+		cmap.autumnLeaf = new Object();
+		cmap.autumnLeaf.c = " ";
+		cmap.autumnLeaf.j = "枯葉色";
+		cmap.autumnLeaf.e = "<br>Autumn<br>Leaf";
+		cmap.autumnLeaf.f = "w";		
+		
+		cmap.mapleSugar = new Object();
+		cmap.mapleSugar.c = " ";
+		cmap.mapleSugar.j = "銀煤竹";
+		cmap.mapleSugar.e = "<br>Maple<br>Sugar";
+		cmap.mapleSugar.f = "w";			
+		
+		cmap.oliveYellow = new Object();
+		cmap.oliveYellow.c = " ";
+		cmap.oliveYellow.j = "オリーブイエロー";
+		cmap.oliveYellow.e = "<br>Olive<br>Yellow";
+		cmap.oliveYellow.f = "w";			
+		
+		cmap.elmGreen = new Object();
+		cmap.elmGreen.c = " ";
+		cmap.elmGreen.j = "エルム緑";
+		cmap.elmGreen.e = "<br>Elm<br>Green";
+		cmap.elmGreen.f = "w";			
+		
+		cmap.forestGreen = new Object();
+		cmap.forestGreen.c = " ";
+		cmap.forestGreen.j = "千歲緑";
+		cmap.forestGreen.e = "<br>Forest<br>Green";
+		cmap.forestGreen.f = "w";			
+		
+		cmap.midnightBlue = new Object();
+		cmap.midnightBlue.c = " ";
+		cmap.midnightBlue.j = "青褐";
+		cmap.midnightBlue.e = "<br>Midnight<br>Blue";
+		cmap.midnightBlue.f = "w";		
+		
+		cmap.mulberry = new Object();
+		cmap.mulberry.c = " ";
+		cmap.mulberry.j = "紫根";
+		cmap.mulberry.e = "<br>Mulberry";
+		cmap.mulberry.f = "w";	
+		
+		cmap.taupe = new Object();
+		cmap.taupe.c = " ";
+		cmap.taupe.j = "土龍色";
+		cmap.taupe.e = "<br>Taupe";
+		cmap.taupe.f = "w";	
+
+		cmap.ivoryBlack = new Object();
+		cmap.ivoryBlack.c = " ";
+		cmap.ivoryBlack.j = "象牙黑";
+		cmap.ivoryBlack.e = "<br>Ivory<br>Black";
+		cmap.ivoryBlack.f = "w";			
 		
 	assignColor(c1, "orchidPink");
 	assignColor(c2, "coralPink");
@@ -105,24 +221,24 @@
 	assignColor(c8, "forgetMeNotBlue");
 	assignColor(c9, "lilac");
 	assignColor(c10, "pigeonGrey");
-/* 	assignColor(c11, "shellPink");
-	assignColor(c12, "shellPink");
-	assignColor(c13, "shellPink");
-	assignColor(c14, "shellPink");
-	assignColor(c15, "shellPink");
-	assignColor(c16, "shellPink");
-	assignColor(c17, "shellPink");
-	assignColor(c18, "shellPink");
-	assignColor(c19, "shellPink");
-	assignColor(c20, "shellPink");
-	assignColor(c21, "shellPink");
-	assignColor(c22, "shellPink");
-	assignColor(c23, "shellPink");
-	assignColor(c24, "shellPink");
-	assignColor(c25, "shellPink");
-	assignColor(c26, "shellPink");
-	assignColor(c27, "shellPink");
-	assignColor(c28, "shellPink");
-	assignColor(c29, "shellPink");
-	assignColor(c30, "shellPink"); */
+	assignColor(c11, "cherryRed");
+	assignColor(c12, "tangerineOrange");
+	assignColor(c13, "dandelion");
+	assignColor(c14, "chartreuseGreen");
+	assignColor(c15, "parrotGreen");
+	assignColor(c16, "peacockBlue");
+	assignColor(c17, "kingFisher");
+	assignColor(c18, "lapisLazuli");
+	assignColor(c19, "irisViolet");
+	assignColor(c20, "ivoryBlack");
+	assignColor(c21, "crimson");
+	assignColor(c22, "chestnutBrown");
+	assignColor(c23, "autumnLeaf");
+	assignColor(c24, "mapleSugar");
+	assignColor(c25, "oliveYellow");
+	assignColor(c26, "elmGreen");
+	assignColor(c27, "forestGreen");
+	assignColor(c28, "midnightBlue");
+	assignColor(c29, "mulberry");
+	assignColor(c30, "taupe");
 																											
