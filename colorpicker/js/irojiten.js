@@ -16,7 +16,7 @@
 		// manipulating css statement: 
 		// background: #eee url('img/irojiten/colors/orchidPink_c.jpg') center center;
 		// only display the middle of image
-		divname.style = "background: url('img/irojiten/colors/" + colorName + "_c.jpg') center center";
+		//divname.style = "background: url('img/irojiten/colors/" + colorName + "_c.jpg') center center";
 		if (cmap[colorName].f == 'b'){
 			divname.style.color = "#000000";
 		} else {
@@ -104,7 +104,7 @@
 	assignColor(c8, "forgetMeNotBlue");
 	assignColor(c9, "lilac");
 	assignColor(c10, "pigeonGrey");
-	assignColor(c11, "shellPink");
+/* 	assignColor(c11, "shellPink");
 	assignColor(c12, "shellPink");
 	assignColor(c13, "shellPink");
 	assignColor(c14, "shellPink");
@@ -123,5 +123,5 @@
 	assignColor(c27, "shellPink");
 	assignColor(c28, "shellPink");
 	assignColor(c29, "shellPink");
-	assignColor(c30, "shellPink");
+	assignColor(c30, "shellPink"); */
 																											
