@@ -11,7 +11,7 @@
 		cname.innerHTML = cmap[colorName].c;
 		jname.innerHTML = cmap[colorName].j;
 		ename.innerHTML = cmap[colorName].e;
-		divname.style.backgroundColor = colorCode;
+		//divname.style.backgroundColor = colorCode;
 		if (cmap[colorName].f == 'b'){
 			divname.style.color = "#000000";
 		} else {
@@ -24,20 +24,27 @@
 	// hash table for catagory properties
 	var cmap = new Object();
 		cmap.crayon = new Object();
-		cmap.crayon.c = "蜡笔";
+		cmap.crayon.c = "<br>蜡笔";
 		cmap.crayon.j = "クレヨン";
 		cmap.crayon.e = "Crayon<br>Colors";
 		cmap.crayon.o = "#FFFFFF";
-		cmap.crayon.f = "b";
+		cmap.crayon.f = "w";
 
 		cmap.irojiten = new Object();
-		cmap.irojiten.c = "色词典";
+		cmap.irojiten.c = "<br>色词典";
 		cmap.irojiten.j = "色詞典";
-		cmap.irojiten.e = "Irojiten";
+		cmap.irojiten.e = "Irojiten<br>Colors";
 		cmap.irojiten.o = "#FFFFFF";
-		cmap.irojiten.f = "b";
-	
+		cmap.irojiten.f = "w";
+
+		cmap.brand = new Object();
+		cmap.brand.c = "<br>品牌";
+		cmap.brand.j = "ブランド";
+		cmap.brand.e = "Brand<br>Names";
+		cmap.brand.o = "#FFFFFF";
+		cmap.brand.f = "w";	
+		
 	assignColor(c1, "crayon");
 	assignColor(c2, "irojiten");
-
+	assignColor(c3, "brand");
 
