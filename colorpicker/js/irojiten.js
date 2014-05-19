@@ -172,7 +172,7 @@
 		cmap.oliveYellow = new Object();
 		cmap.oliveYellow.c = " ";
 		cmap.oliveYellow.j = "オリーブイエロー";
-		cmap.oliveYellow.e = "<br>Olive<br>Yellow";
+		cmap.oliveYellow.e = "Olive<br>Yellow";
 		cmap.oliveYellow.f = "w";			
 		
 		cmap.elmGreen = new Object();
