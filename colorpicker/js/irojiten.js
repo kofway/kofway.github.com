@@ -16,7 +16,8 @@
 		// manipulating css statement: 
 		// background: #eee url('img/irojiten/colors/orchidPink_c.jpg') center center;
 		// only display the middle of image
-		divname.setAttribute("style", "background: url('img/irojiten/colors/orchidPink_c.jpg') center center; background-size: 120% 120%");
+		var attr = "background: url('img/irojiten/colors/" + colorName+ "_c.jpg') center center; background-size: 120% 120%";
+		divname.setAttribute("style", attr);
 		if (cmap[colorName].f == 'b'){
 			divname.style.color = "#000000";
 		} else {
