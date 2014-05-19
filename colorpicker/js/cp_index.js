@@ -30,9 +30,14 @@
 		cmap.crayon.o = "#FFFFFF";
 		cmap.crayon.f = "b";
 
-
+		cmap.irojiten = new Object();
+		cmap.irojiten.c = "色词典";
+		cmap.irojiten.j = "色詞典";
+		cmap.irojiten.e = "Irojiten";
+		cmap.irojiten.o = "#FFFFFF";
+		cmap.irojiten.f = "b";
 	
 	assignColor(c1, "crayon");
-
+	assignColor(c2, "irojiten");
 
 

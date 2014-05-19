@@ -121,13 +121,43 @@ height: 100%;
 .page_head{
 width: 98.7%;
 margin: 10px 3px 10px 3px;
-
+border-radius: 25px;
+box-shadow: 1px 1px 15px #ffffff;
 }
 
 .title_span{
 text-align:center;
 box-shadow: 1px 1px 15px #ffffff;
 }
+
+.page_head_irojiten{
+background-color: transparent;
+background-image: url('img/irojiten/orangePencil_banner.jpg');
+margin: 5px 0px 25px 0px;
+border-radius: 25px;
+
+}
+.title_span_irojiten{
+text-align:center;
+background-color: transparent;
+margin: 50px 50px 50px 50px;
+
+}
+
+.container_irojiten {
+width: 80px;
+height: 70px;
+vertical-align: middle;
+margin: 5px 0px 5px 0px;
+padding: 10px;
+border-radius: 25px;
+box-shadow: 1px 1px 15px #A82A00;
+display:inline-block;
+background-size: contain;
+background-repeat: no-repeat;
+}
+
+
 
 /* iPhone 5/5s (portrait and landscape) ----------- */
 @media only screen 
