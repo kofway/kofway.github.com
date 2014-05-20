@@ -100,26 +100,44 @@
 		cmap.android.p1 = "110%";
 		cmap.android.p2 = "110%";
 
+		cmap.kikkoman = new Object();
+		cmap.kikkoman.e = "亀甲萬";
+		cmap.kikkoman.p1 = "120%";
+		cmap.kikkoman.p2 = "100%";
 
+		cmap.cadbery = new Object();
+		cmap.cadbery.e = "Cadbery";
+		cmap.cadbery.p1 = "140%";
+		cmap.cadbery.p2 = "110%";
+
+		cmap.twitter = new Object();
+		cmap.twitter.e = "Twitter";
+		cmap.twitter.p1 = "150%";
+		cmap.twitter.p2 = "100%";
+		
+		cmap.navitime = new Object();
+		cmap.navitime.e = "Twitter";
+		cmap.navitime.p1 = "100%";
+		cmap.navitime.p2 = "100%";
 
 		
+	// removed: android melonSoda firefox cadbery calpico
 	assignColor(c1, "cocacola");
-	assignColor(c2, "bigCamera");
+	assignColor(c2, "starbucks");
 	assignColor(c3, "facebook");
-	assignColor(c4, "starbucks");
-	assignColor(c5, "disney");
+	assignColor(c4, "twitter");
+	assignColor(c5, "appleSilver");
 	assignColor(c6, "hmh");
 	assignColor(c7, "tiffany");
-	assignColor(c8, "appleSilver");
-	assignColor(c9, "snidel");
-	assignColor(c10, "calpico");
-	assignColor(c11, "android");
-	assignColor(c12, "firefox");
+	assignColor(c8, "navitime");
+	assignColor(c9, "disney");
+	assignColor(c10, "snidel");
+	assignColor(c11, "kikkoman");
+	assignColor(c12, "");
+	assignColor(c13, "");
+	assignColor(c14, "");
+	assignColor(c15, "");
 
-	// assignColor(c12, "tangerineOrange");
-	// assignColor(c13, "dandelion");
-	// assignColor(c14, "chartreuseGreen");
-	// assignColor(c15, "parrotGreen");
 	// assignColor(c16, "peacockBlue");
 	// assignColor(c17, "kingFisher");
 	// assignColor(c18, "lapisLazuli");
