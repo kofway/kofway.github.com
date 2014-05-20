@@ -134,6 +134,11 @@
 		cmap.deicy.p1 = "150%";
 		cmap.deicy.p2 = "100%";
 		
+		cmap.youtube = new Object();
+		cmap.youtube.e = "YouTube";
+		cmap.youtube.p1 = "100%";
+		cmap.youtube.p2 = "100%";
+		
 	// removed: android melonSoda firefox cadbery calpico navitime kikkoman 
 	assignColor(c1, "cocacola");
 	assignColor(c2, "starbucks");
@@ -146,7 +151,7 @@
 	assignColor(c9, "disney");
 	assignColor(c10, "taiko");
 	assignColor(c11, "deicy");
-	assignColor(c12, "");
+	assignColor(c12, "youtube");
 	assignColor(c13, "");
 	assignColor(c14, "");
 	assignColor(c15, "");
