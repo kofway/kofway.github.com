@@ -43,7 +43,7 @@
 		cmap.disney = new Object();
 		cmap.disney.e = "Disney";
 		cmap.disney.p1 = "130%";
-		cmap.disney.p2 = "170%";
+		cmap.disney.p2 = "180%";
 	
 		cmap.firefox = new Object();
 		cmap.firefox.e = "Firefox";
