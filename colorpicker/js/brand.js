@@ -37,8 +37,8 @@
 
 		cmap.cocacola = new Object();
 		cmap.cocacola.e = "Coca Cola";
-		cmap.cocacola.p1 = "150%";
-		cmap.cocacola.p2 = "150%";
+		cmap.cocacola.p1 = "140%";
+		cmap.cocacola.p2 = "140%";
 			
 		cmap.disney = new Object();
 		cmap.disney.e = "Disney";
@@ -52,8 +52,8 @@
 
 		cmap.facebook = new Object();
 		cmap.facebook.e = "Facebook";
-		cmap.facebook.p1 = "140%";
-		cmap.facebook.p2 = "140%";
+		cmap.facebook.p1 = "110%";
+		cmap.facebook.p2 = "110%";
 	
 		cmap.snidel = new Object();
 		cmap.snidel.e = "snidel";
@@ -69,19 +69,53 @@
 		cmap.tiffany.e = "Tiffany & Co";
 		cmap.tiffany.p1 = "100%";
 		cmap.tiffany.p2 = "100%";
+
+		cmap.hmh = new Object();
+		cmap.hmh.e = "HONEY MI HONEY";
+		cmap.hmh.p1 = "120%";
+		cmap.hmh.p2 = "80%";
+
+		cmap.melonSoda = new Object();
+		cmap.melonSoda.e = "メロンソーダ";
+		cmap.melonSoda.p1 = "100%";
+		cmap.melonSoda.p2 = "130%";
+
+		cmap.calpico = new Object();
+		cmap.calpico.e = "カルピス";
+		cmap.calpico.p1 = "115%";
+		cmap.calpico.p2 = "100%";
+
+		cmap.bigCamera = new Object();
+		cmap.bigCamera.e = "ビックカメラ";
+		cmap.bigCamera.p1 = "100%";
+		cmap.bigCamera.p2 = "100%";
+
+		cmap.starbucks = new Object();
+		cmap.starbucks.e = "Starbucks";
+		cmap.starbucks.p1 = "130%";
+		cmap.starbucks.p2 = "130%";
+
+		cmap.android = new Object();
+		cmap.android.e = "Android";
+		cmap.android.p1 = "110%";
+		cmap.android.p2 = "110%";
+
+
+
 		
 	assignColor(c1, "cocacola");
-	assignColor(c2, "disney");
-	assignColor(c3, "firefox");
-	assignColor(c4, "facebook");
-	assignColor(c5, "snidel");
-	assignColor(c6, "appleSilver");
+	assignColor(c2, "bigCamera");
+	assignColor(c3, "facebook");
+	assignColor(c4, "starbucks");
+	assignColor(c5, "disney");
+	assignColor(c6, "hmh");
 	assignColor(c7, "tiffany");
-	// assignColor(c7, "aqua");
-	// assignColor(c8, "forgetMeNotBlue");
-	// assignColor(c9, "lilac");
-	// assignColor(c10, "pigeonGrey");
-	// assignColor(c11, "cherryRed");
+	assignColor(c8, "appleSilver");
+	assignColor(c9, "snidel");
+	assignColor(c10, "calpico");
+	assignColor(c11, "android");
+	assignColor(c12, "firefox");
+
 	// assignColor(c12, "tangerineOrange");
 	// assignColor(c13, "dandelion");
 	// assignColor(c14, "chartreuseGreen");
