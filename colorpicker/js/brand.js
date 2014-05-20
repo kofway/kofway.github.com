@@ -42,8 +42,8 @@
 			
 		cmap.disney = new Object();
 		cmap.disney.e = "Disney";
-		cmap.disney.p1 = "100%";
-		cmap.disney.p2 = "92%";
+		cmap.disney.p1 = "130%";
+		cmap.disney.p2 = "170%";
 	
 		cmap.firefox = new Object();
 		cmap.firefox.e = "Firefox";
@@ -54,14 +54,29 @@
 		cmap.facebook.e = "Facebook";
 		cmap.facebook.p1 = "140%";
 		cmap.facebook.p2 = "140%";
+	
+		cmap.snidel = new Object();
+		cmap.snidel.e = "snidel";
+		cmap.snidel.p1 = "110%";
+		cmap.snidel.p2 = "110%";
+
+		cmap.appleSilver = new Object();
+		cmap.appleSilver.e = "Apple";
+		cmap.appleSilver.p1 = "100%";
+		cmap.appleSilver.p2 = "100%";
+
+		cmap.tiffany = new Object();
+		cmap.tiffany.e = "Tiffany & Co";
+		cmap.tiffany.p1 = "100%";
+		cmap.tiffany.p2 = "100%";
 		
 	assignColor(c1, "cocacola");
 	assignColor(c2, "disney");
 	assignColor(c3, "firefox");
 	assignColor(c4, "facebook");
-	
-	// assignColor(c5, "lettuceGreen");
-	// assignColor(c6, "iceGreen");
+	assignColor(c5, "snidel");
+	assignColor(c6, "appleSilver");
+	assignColor(c7, "tiffany");
 	// assignColor(c7, "aqua");
 	// assignColor(c8, "forgetMeNotBlue");
 	// assignColor(c9, "lilac");
