@@ -88,7 +88,7 @@ font-size:small;
 margin:1px;
 }
 
-/* New Structure */
+/* crayon.html */
 .main_container{
 width: 98.7%;
 margin: 0px 3px 0px 3px;
@@ -130,6 +130,7 @@ text-align:center;
 box-shadow: 1px 1px 15px #ffffff;
 }
 
+/* irojiten.html */
 .page_head_irojiten{
 background-color: transparent;
 
@@ -157,6 +158,7 @@ background-size: contain;
 background-repeat: no-repeat;
 }
 
+/* cp_index.html */
 .container_index{
 
 width: 100px;
@@ -170,6 +172,34 @@ display:inline-block;
 background: #ad7b7b;
 }
 
+
+/* brand.html */
+.page_head_brand{
+background-color: transparent;
+
+margin: 5px 0px 25px 0px;
+border-radius: 25px;
+
+}
+.title_span_brand{
+text-align:center;
+background-color: transparent;
+margin: 50px 50px 50px 50px;
+
+}
+
+.container_brand {
+width: 80px;
+height: 70px;
+vertical-align: middle;
+margin: 5px 0px 5px 0px;
+padding: 10px;
+border-radius: 25px;
+box-shadow: 1px 1px 15px #A82A00;
+display:inline-block;
+background-size: contain;
+background-repeat: no-repeat;
+}
 
 /* iPhone 5/5s (portrait and landscape) ----------- */
 @media only screen 
