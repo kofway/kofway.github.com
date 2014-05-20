@@ -28,7 +28,11 @@
 			divname.style.color = "#FFFFFF";
 		} */
 		link.title = cmap[colorName].e;
-		link.href = "img/brand/" + colorName + ".jpg";
+		if (colorName == "tiffany"){
+			link.href = "img/brand/" + colorName + "_box.jpg";
+		}else{
+			link.href = "img/brand/" + colorName + ".jpg";
+		}
 	}
 
 	// hash table for color properties
@@ -57,8 +61,8 @@
 	
 		cmap.snidel = new Object();
 		cmap.snidel.e = "snidel";
-		cmap.snidel.p1 = "110%";
-		cmap.snidel.p2 = "110%";
+		cmap.snidel.p1 = "80%";
+		cmap.snidel.p2 = "60%";
 
 		cmap.appleSilver = new Object();
 		cmap.appleSilver.e = "Apple";
@@ -116,12 +120,21 @@
 		cmap.twitter.p2 = "100%";
 		
 		cmap.navitime = new Object();
-		cmap.navitime.e = "Twitter";
+		cmap.navitime.e = "Navitime";
 		cmap.navitime.p1 = "100%";
 		cmap.navitime.p2 = "100%";
 
+		cmap.taiko = new Object();
+		cmap.taiko.e = "太鼓の達人";
+		cmap.taiko.p1 = "130%";
+		cmap.taiko.p2 = "130%";
+
+		cmap.deicy = new Object();
+		cmap.deicy.e = "deicy";
+		cmap.deicy.p1 = "150%";
+		cmap.deicy.p2 = "100%";
 		
-	// removed: android melonSoda firefox cadbery calpico
+	// removed: android melonSoda firefox cadbery calpico navitime kikkoman 
 	assignColor(c1, "cocacola");
 	assignColor(c2, "starbucks");
 	assignColor(c3, "facebook");
@@ -129,10 +142,10 @@
 	assignColor(c5, "appleSilver");
 	assignColor(c6, "hmh");
 	assignColor(c7, "tiffany");
-	assignColor(c8, "navitime");
+	assignColor(c8, "snidel");
 	assignColor(c9, "disney");
-	assignColor(c10, "snidel");
-	assignColor(c11, "kikkoman");
+	assignColor(c10, "taiko");
+	assignColor(c11, "deicy");
 	assignColor(c12, "");
 	assignColor(c13, "");
 	assignColor(c14, "");
