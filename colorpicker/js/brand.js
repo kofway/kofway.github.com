@@ -29,7 +29,7 @@
 		} */
 		link.title = cmap[colorName].e;
 		if (colorName == "tiffany"){
-			link.href = "img/brand/" + colorName + "_box.jpg";
+			link.href = "img/brand/tiffany.jpg";
 		}else{
 			link.href = "img/brand/" + colorName + ".jpg";
 		}
@@ -46,8 +46,8 @@
 			
 		cmap.disney = new Object();
 		cmap.disney.e = "Disney";
-		cmap.disney.p1 = "130%";
-		cmap.disney.p2 = "180%";
+		cmap.disney.p1 = "100%";
+		cmap.disney.p2 = "100%";
 	
 		cmap.firefox = new Object();
 		cmap.firefox.e = "Firefox";
@@ -70,9 +70,9 @@
 		cmap.appleSilver.p2 = "100%";
 
 		cmap.tiffany = new Object();
-		cmap.tiffany.e = "Tiffany & Co";
-		cmap.tiffany.p1 = "100%";
-		cmap.tiffany.p2 = "100%";
+		cmap.tiffany.e = "The Little Blue Box";
+		cmap.tiffany.p1 = "110%";
+		cmap.tiffany.p2 = "132%";
 
 		cmap.hmh = new Object();
 		cmap.hmh.e = "HONEY MI HONEY";
@@ -136,25 +136,45 @@
 		
 		cmap.youtube = new Object();
 		cmap.youtube.e = "YouTube";
-		cmap.youtube.p1 = "100%";
-		cmap.youtube.p2 = "100%";
+		cmap.youtube.p1 = "110%";
+		cmap.youtube.p2 = "110%";
+		
+		cmap.nageo = new Object();
+		cmap.nageo.e = "National Geographic";
+		cmap.nageo.p1 = "100%";
+		cmap.nageo.p2 = "100%";
+		
+		cmap.mario = new Object();
+		cmap.mario.e = "Super Mario Bros";
+		cmap.mario.p1 = "120%";
+		cmap.mario.p2 = "140%";
+
+		cmap.warnerBros = new Object();
+		cmap.warnerBros.e = "Warner Brothers";
+		cmap.warnerBros.p1 = "100%";
+		cmap.warnerBros.p2 = "110%";
+
+		cmap.nihonU = new Object();
+		cmap.nihonU.e = "日本大学";
+		cmap.nihonU.p1 = "95%";
+		cmap.nihonU.p2 = "100%";
 		
 	// removed: android melonSoda firefox cadbery calpico navitime kikkoman 
 	assignColor(c1, "cocacola");
 	assignColor(c2, "starbucks");
 	assignColor(c3, "facebook");
 	assignColor(c4, "twitter");
-	assignColor(c5, "appleSilver");
-	assignColor(c6, "hmh");
-	assignColor(c7, "tiffany");
-	assignColor(c8, "snidel");
-	assignColor(c9, "disney");
-	assignColor(c10, "taiko");
-	assignColor(c11, "deicy");
-	assignColor(c12, "youtube");
-	assignColor(c13, "");
-	assignColor(c14, "");
-	assignColor(c15, "");
+	assignColor(c5, "nageo");
+	assignColor(c6, "youtube");
+	assignColor(c7, "mario");
+	assignColor(c8, "disney");
+	assignColor(c9, "appleSilver");
+	assignColor(c10, "warnerBros");
+	assignColor(c11, "nihonU");
+	assignColor(c12, "snidel");
+	assignColor(c13, "deicy");
+	assignColor(c14, "hmh");
+	assignColor(c15, "tiffany");
 
 	// assignColor(c16, "peacockBlue");
 	// assignColor(c17, "kingFisher");
