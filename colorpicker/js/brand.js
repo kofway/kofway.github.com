@@ -159,21 +159,36 @@
 		cmap.nihonU.p1 = "95%";
 		cmap.nihonU.p2 = "100%";
 		
-	// removed: android melonSoda firefox cadbery calpico navitime kikkoman 
+		cmap.uniqlo = new Object();
+		cmap.uniqlo.e = "ユニクロ";
+		cmap.uniqlo.p1 = "180%";
+		cmap.uniqlo.p2 = "180%";		
+		
+		cmap.fujifilm = new Object();
+		cmap.fujifilm.e = "FUJIFILM";
+		cmap.fujifilm.p1 = "100%";
+		cmap.fujifilm.p2 = "100%";	
+		
+		cmap.ps = new Object();
+		cmap.ps.e = "Playstation";
+		cmap.ps.p1 = "100%";
+		cmap.ps.p2 = "100%";	
+		
+	// removed: android melonSoda firefox cadbery calpico navitime kikkoman taiko snidel
 	assignColor(c1, "cocacola");
 	assignColor(c2, "starbucks");
 	assignColor(c3, "facebook");
 	assignColor(c4, "twitter");
-	assignColor(c5, "nageo");
+	assignColor(c5, "disney");
 	assignColor(c6, "youtube");
 	assignColor(c7, "mario");
-	assignColor(c8, "disney");
-	assignColor(c9, "appleSilver");
+	assignColor(c8, "nageo");
+	assignColor(c9, "ps");
 	assignColor(c10, "warnerBros");
 	assignColor(c11, "nihonU");
-	assignColor(c12, "snidel");
-	assignColor(c13, "deicy");
-	assignColor(c14, "hmh");
+	assignColor(c12, "uniqlo");
+	assignColor(c13, "fujifilm");
+	assignColor(c14, "android");
 	assignColor(c15, "tiffany");
 
 	// assignColor(c16, "peacockBlue");
