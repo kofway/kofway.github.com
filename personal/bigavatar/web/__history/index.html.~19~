@@ -96,20 +96,14 @@
 					<div class="clearfix"> </div>
 				</div>
 			</div>
-			<!---- //aboutus ---->
-			
-			<!------------------------------------------------------------------------------>
-			
-			<!---- QUOTE START ---->
+			<!---- aboutus ---->
+			<!---- QUOTE ---->
 			<div class="quote text-center">
 				<div class="container">
 					<p>Some Random Quote, if needed...</p>
 				</div>
 			</div>
-			<!---- QUOTE END ---->
-			
-			<!------------------------------------------------------------------------------>
-			
+			<!---- //QUOTE ---->
 			<!---- WORKS ---->
 			<div id="work" class="works">
 				<div class="container">
@@ -145,6 +139,30 @@
 					                </div>
 					                <div class="item">
 					                	<img class="lazyOwl" data-src="./images/screen2.jpg" alt="screen-name">
+					                	<label>PROJECT TITLE</label>
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="./images/screen3.jpg" alt="screen-name">
+					                	<label>PROJECT TITLE</label>
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="./images/screen4.jpg" alt="screen-name">
+					                	<label>PROJECT TITLE</label>
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="./images/screen5.jpg" alt="screen-name">
+					                	<label>PROJECT TITLE</label>
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="./images/screen1.jpg" alt="screen-name">
+					                	<label>PROJECT TITLE</label>
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="./images/screen2.jpg" alt="screen-name">
+					                	<label>PROJECT TITLE</label>
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="./images/screen3.jpg" alt="screen-name">
 					                	<label>PROJECT TITLE</label>
 					                </div>
 				              </div>
