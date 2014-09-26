@@ -89,7 +89,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!---- aboutus ---->
 		<div class="aboutus">
 			<div class="container">
-				<h2>ABOUT ME</h2>
+				<h2>ABOUT<br/>John Appleseed</h2>
 				<span> </span>
 				<div class="col-md-6 aboutus-left">
 					<p>Some text wall and all, left-aligned...</p>
@@ -106,13 +106,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!------------------------------------------------------------------------------>
 			
 		<!---- QUOTE START ---->
-		<!--
 		<div class="quote text-center">
 			<div class="container">
 				<p>Some Random Quote, if needed...</p>
 			</div>
 		</div>
-		-->
 		<!---- QUOTE END ---->
 			
 		<!------------------------------------------------------------------------------>
@@ -120,7 +118,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!---start-works--->
 		<div class="works" id="work">
 			<div class="container">
-				<h2>MY WORKS</h2>
+				<h2>MY<br/>WORKS</h2>
 				<span> </span>
 			</div>
 			<!-- BEGIN .wmuSlider -->
@@ -171,7 +169,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!---- CONTACT ----->
 		<div id="contact" class="contact"> 
 			<div class="container">
-				<h2>CONTACT ME</h2>
+				<h2>WAYS TO<br/>CONTACT</h2>
 				<span> </span>
 			<!----contact-grids---->
 			<div class="contact-grids">

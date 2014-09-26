@@ -246,7 +246,7 @@ a.contactme:hover{
 a.aboutus-right-btn{
 	color: #FFF;
 	font-family: 'nexa_boldregular';
-	background: #00B6AE;
+	background: #38B48B;
 	text-decoration: none;
 	font-size: 1.1em;
 	padding: 0.6em 2em;
@@ -263,7 +263,7 @@ a.aboutus-right-btn:hover{
 }
 /*--- quote ---*/
 .quote{
-	background:#2E3041;
+	background:#FFFFFF;
 	padding:6em 0;
 }
 .quote p{
@@ -274,8 +274,9 @@ a.aboutus-right-btn:hover{
 	margin: 0 auto;
 }
 /*---//quote ---*/
-/*---- works ----*/
+/*---- old works ----*/
 .works{
+	background:#38B48B;
 	padding:2em 0 3em;
 }
 .works h2{
@@ -369,7 +370,89 @@ ul.project-share{
 	color:#00B6AE;
 	text-decoration:none;
 }
-/*---//works ----*/
+/*---//old works ----*/
+/*---new works ----*/
+/* Demo */
+.wmuSlider,
+.wmuGallery {
+    margin-bottom: 20px;
+}
+
+/* mwuSlider */
+.wmuSlider {
+    position: relative;
+	overflow: hidden;
+	margin: 4em 0 2em;
+}
+.wmuSlider .wmuSliderWrapper {
+    display: none;
+}
+.wmuSlider .wmuSliderWrapper article {
+    position: relative;
+	text-align: center;
+	padding: 0 0em;
+}
+.wmuSlider .wmuSliderWrapper article img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+/* mwuGallery */
+.wmuGallery .wmuGalleryImage {
+    position: relative;
+    text-align: center;
+}
+.wmuGallery .wmuGalleryImage img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+/* Default Skin */
+.wmuGallery .wmuGalleryImage {
+    margin-bottom: 10px;
+}
+.wmuSliderPrev, .wmuSliderNext {
+    position: absolute;
+    width: 40px;
+    height: 61px;
+    text-indent: -9999px;
+    background: url(../images/image-sprite.png) no-repeat -411px -10px;
+    top: 50%;
+    margin-top: -40px;
+    z-index: 2;
+    cursor:pointer;
+}
+.wmuSliderPrev {
+    background: url(../images/image-sprite.png) no-repeat -453px -10px;
+    left: 20px;
+}
+.wmuSliderNext {
+    right: 20px;
+}
+.wmuSliderPagination {
+   z-index: 2;
+	position: absolute;
+	left: 17%;
+	top: 57%;
+}
+.wmuSliderPagination li {
+    float: left;
+    margin: 0 5px 0 0;
+    list-style-type: none;
+}
+.wmuSliderPagination a {
+    display: block;
+    text-indent: -9999px;
+    width: 10px;
+    height: 10px;
+    background: url(../images/sprites.png) no-repeat 0 -80px;
+}
+.wmuSliderPagination a.wmuActive {
+    background-position: -10px -80px;
+}
+/*---//new works ----*/
 /*----testmonials---*/
 .testmonials{
 	background:#2E3041;
@@ -564,11 +647,12 @@ ul.project-share{
 }
 /*----copy-right----*/
 .copy-right{
+	background:#38B48B;
 	position:relative;
 	font-weight:300;
 }
 .copy-right{
-	background:url(../images/footer-bg.png);
+	/*background:url(../images/footer-bg.png);*/
 	padding:5em 0; 
 }
 .copy-right p{
@@ -584,7 +668,7 @@ ul.project-share{
 	color:#00B6AE;
 }
 .copy-right label{
-	color:#999;
+	color:#FFF;
 	font-size:0.875em;
 	padding:0;
 	margin:0;
