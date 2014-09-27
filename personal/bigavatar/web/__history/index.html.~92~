@@ -144,13 +144,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								<div class="wrap">
 								<div class="artical-info">
 									<h4>Makoto Shinkai</h4>
-									<p>This is a sample work presented by Makoto Shinkai.</p>
+									<p>Intro text p</p>
 								</div>
 								<div class="artical-pic">
 									<img src="./images/slider1.jpg" />
 									<div class="artical-pic-head">
 										<div class="artical-pic-head-left">
-											<a href="#"><h4>Makoto Shinkai 1</h4></a>
+											<a href="#"><h4>Artical Picture Title</h4></a>
 										</div>
 									</div>
 								</div>
@@ -166,7 +166,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<img src="./images/slider2.jpg" />
 									<div class="artical-pic-head">
 										<div class="artical-pic-head-left">
-											<a href="#"><h4>Makoto Shinkai 2</h4></a>
+											<a href="#"><h4>Artical Pic Head Title 2</h4></a>
 										</div>
 									</div>
 								</div>
@@ -182,7 +182,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 									<img src="./images/slider3.jpg" />
 									<div class="artical-pic-head">
 										<div class="artical-pic-head-left">
-											<a href="#"><h4>Makoto Shinkai 3</h4></a>
+											<a href="#"><h4>Artical Pic Head Title 3</h4></a>
 										</div>
 									</div>
 								</div>
@@ -214,7 +214,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<!----contact-grids---->
 			<div class="contact-grids">
 				<div class="col-md-6 contact-left">
-					<p>Feel free to contact me using the boxes below. I appreciate your time and effort.</p>
+					<p>Some text p</p>
 					<form>
 						<input type="text" value="Your beautiful name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your beautiful name';}">
 						<input type="text" value="Your email address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Your email address';}">
@@ -238,7 +238,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 					<div class="clearfix"> </div>
 					<div class="social-share">
-						<h4>Sample Social Links</h4>
+						<h4>SOCIAL</h4>
 						<ul class="unstyled-list list-inline">
 							<li><a class="facebook" href="#"><span> </span></a></li>
 							<li><a class="twitter" href="#"><span> </span></a></li>
