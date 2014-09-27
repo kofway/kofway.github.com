@@ -64,8 +64,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					 <nav class="top-nav">
 						<ul class="top-nav">
 							<li class="active"><a href="#aboutus" class="scroll">About</a><span> </span></li>
-							<li><a href="#work" class="scroll">Work</a></li>
-							<li><a href="#contact" class="scroll">Contact</a></li>
+							<li class="active"><a href="#work" class="scroll">Work</a><span> </span></li>
+							<li class="active"><a href="#contact" class="scroll">Contact</a><span> </span></li>
 						</ul>
 						<a href="#" id="pull"><img src="./images/nav-icon.png" title="menu" /></a>
 					</nav>
@@ -74,7 +74,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<div class="top-header-info">
 						<p>
 							John Appleseed<br/>
-							An Open Source Java Developer<br/>
+							Whoever You Want<br>
+							<br/>
 						</p>
 						<!--<a class="contactme" href="#">SHOW ME MORE</a>-->
 					</div>
@@ -87,16 +88,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!------------------------------------------------------------------------------>
 						
 		<!---- aboutus ---->
-		<div class="aboutus">
+		<div class="aboutus" id="aboutus">
 			<div class="container">
-				<h2>ABOUT<br/>John Appleseed</h2>
+				<h2><a href="#aboutus" class="scroll">ABOUT ME</a></h2>
 				<span> </span>
 				<div class="col-md-6 aboutus-left">
 					<p>Some text wall and all, left-aligned...</p>
 				</div>
 				<div class="col-md-6 aboutus-right">
 					<p>Some text wall and all, right-aligned...</p>
-					<a class="aboutus-right-btn" href="#">MY RESUME (NOT WORKING YET)</a>
+					<a class="aboutus-right-btn" href="#">MY RESUME (YET)</a>
 				</div>
 				<div class="clearfix"> </div>
 			</div>
@@ -106,11 +107,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!------------------------------------------------------------------------------>
 			
 		<!---- QUOTE START ---->
+		<!--
 		<div class="quote text-center">
 			<div class="container">
 				<p>Some Random Quote, if needed...</p>
 			</div>
 		</div>
+		-->
 		<!---- QUOTE END ---->
 			
 		<!------------------------------------------------------------------------------>
@@ -118,9 +121,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!---start-works--->
 		<div class="works" id="work">
 			<div class="container">
-				<h2>MY<br/>WORKS</h2>
+				<h2><a href="#work" class="scroll">MY WORKS</a></h2>
 				<span> </span>
 			</div>
+
 			<!-- BEGIN .wmuSlider -->
 				 <div class="wmuSlider example3">
 					  <div class="wmuSliderWrapper">
@@ -133,18 +137,55 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								</div>
 								<div class="artical-pic">
 									<img src="./images/slider1.jpg" />
-									<!-- <div class="artical-pic-head">
+									<div class="artical-pic-head">
 										<div class="artical-pic-head-left">
-											<a href="#"><h4>Artical Pic Head Title</h4></a>
-											<span>SPAN MESSAGE</span>
+											<a href="#"><h4>Artical Picture Title</h4></a>
+										</div>
+									</div>
+								</div>
+								</div>
+							</article>
+							<article>
+								<div class="wrap">
+								<div class="artical-info">
+									<h4>Intro Text h4 2</h4>
+									<p>Intro text p 2</p>
+									<!--<a href="#"><span> </span>View all works</a>-->
+								</div>
+								<div class="artical-pic">
+									<img src="./images/slider2.jpg" />
+									<div class="artical-pic-head">
+										<div class="artical-pic-head-left">
+											<a href="#"><h4>Artical Pic Head Title 2</h4></a>
+											<span>SPAN MESSAGE 2</span>
 										</div>
 										<div class="artical-pic-head-right">
 											<a href="#">145<label> </label> </a>
 										</div>
 										<div class="clear"> </div>
 									</div>
-									<p>Some other text</p>
-									<a class="readmore" href="#"><span> </span> View details</a> -->
+								</div>
+								</div>
+							</article>
+							<article>
+								<div class="wrap">
+								<div class="artical-info">
+									<h4>Intro Text h4 3</h4>
+									<p>Intro text p 3</p>
+									<!--<a href="#"><span> </span>View all works</a>-->
+								</div>
+								<div class="artical-pic">
+									<img src="./images/slider3.jpg" />
+									<div class="artical-pic-head">
+										<div class="artical-pic-head-left">
+											<a href="#"><h4>Artical Pic Head Title 2</h4></a>
+											<span>SPAN MESSAGE 2</span>
+										</div>
+										<div class="artical-pic-head-right">
+											<a href="#">145<label> </label> </a>
+										</div>
+										<div class="clear"> </div>
+									</div>
 								</div>
 								</div>
 							</article>
@@ -169,7 +210,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!---- CONTACT ----->
 		<div id="contact" class="contact"> 
 			<div class="container">
-				<h2>WAYS TO<br/>CONTACT</h2>
+				<h2><a href="#contact" class="scroll">CONTACT ME</a></h2>
 				<span> </span>
 			<!----contact-grids---->
 			<div class="contact-grids">
@@ -182,12 +223,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<input type="submit" value="SEND MESSAGE" />
 						<div class="clearfix"> </div>
 					</form>
-					<p>some text, p again</p>
 				</div>
 				<div class="col-md-6 contact-right">
 					<p>some personal contact info</p>
 					<div class="address">
-						<label>a@b.com</label>
+						<label>i.am.fake@unreal.com</label>
 						<label>+1 (234) 5678901</label>
 						<label>extension?</label>
 					</div>
@@ -199,12 +239,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					</div>
 					<div class="clearfix"> </div>
 					<div class="social-share">
-						<h4>Social Connection</h4>
+						<h4>SOCIAL</h4>
 						<ul class="unstyled-list list-inline">
 							<li><a class="facebook" href="#"><span> </span></a></li>
 							<li><a class="twitter" href="#"><span> </span></a></li>
-							<li><a class="googlepluse" href="#"><span> </span></a></li>
-							<li><a class="dribbble" href="#"><span> </span></a></li>
+							<!--<li><a class="googlepluse" href="#"><span> </span></a></li>-->
+							<!--<li><a class="dribbble" href="#"><span> </span></a></li>-->
 							<div class="clearfix"> </div>
 						</ul>
 					</div>
