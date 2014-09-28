@@ -6,6 +6,8 @@
 	<link rel="stylesheet" href="css/base.css" type="text/css" media="screen">
 	<meta name="viewport" content="width=device-width; initial-scale=1.0" />
 </head>
+
+
 <body>
 	<div class="container">
 		<table class="table_view">
@@ -20,7 +22,7 @@
 		<table class="table_view">
 			<tr>
 				<td align="center">
-					<a href="sophia/resume.html">sophia</a>
+					<a href="designer/web/index.html">sophia</a>
 				</td>	
 			</tr>	
 		</table>
