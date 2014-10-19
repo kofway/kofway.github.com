@@ -677,6 +677,11 @@ ul.project-share{
 .address{
 	margin:1em 0;
 }
+.address label a{
+	color:#666666;
+	text-decoration:none;
+	display:block;
+}
 .social-share h4{
 	font-size:1.1em;
 	color:#666666;
