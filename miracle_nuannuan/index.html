@@ -1,0 +1,136 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Ivan's Workshop</title>
+  </head>
+  <body>
+    Ivan's Workshop <br/>
+    There is nothing here, you may want to use:<br/>
+    <ul>
+      <li><a href="nikkiup2u3/index.html">Nikki's wardrobe, the online clothes recommendation system.</a></li>
+    </ul>
+    <div>
+      <p>
+        Well, there have to be something, otherwise my adsense account won't get approved. That's so ridiculous, not to mention
+        as a SWE working for google ads, I don't even know how to get my account approved internally. So basically I received
+        an auto-replied mail said sorry it seems that your site is still in construction blah blah blah. Come on this is just a
+        portal, all my contents and daily PVs go to the sub pages, Nikki's wardrobe. What am I expected to put here? A welcome
+        message to google bot saying that I'm fine, my site is fine and it's not in constrution so please approve my application?!
+      </p>
+      <p>
+        Anyway I'm still strugling to fill in "meaningful words" so that our classifier will not think of my site as "not enough
+        content". But seriously I should really try to find internal ways to get my account approved, instead of typing complains
+        here. Or maybe I should just copy/paste some random texts, news, novels or even my codes here. But I still want to keep
+        my pages clean and meaningful, at least meaningful to real users.
+      </p>
+      <p>
+        Another thing raised my concern is, in less than one hour after my first application, auto approver rejected it. But it
+        has been more than 6 hours since my second application and there is nothing happened yet. What if they are using
+        exponential backoff algorithm to crawl pages? Can I get it approved before the end of nikki's life? I really wondered...
+      </p>
+      <p>
+        Update: <br/>
+        I'm so disappointed that my colleague working on OPG told me that my site has to be "full of meaningful original content".
+        Come on the how could bot tell if it's original, or meaningful. We both know that bot doesn't work in that way. Please
+        talk with me as a coworker not diplomat okay? Don't treat me as a theif trying to steal company properties or pretend
+        adsense has such a high bar of quanlity control.
+      </p>
+      <p>
+        But now I realized that there could be ways to solve the problem, one is to use DFP, another google ads product which
+        technically cannot "steal" any money from google (update, how about adsense backfill? OMG that's ... interesting).
+        That's much easier because I don't even have to create a personal DFP account. What I have to do is just creating a new,
+        sponsorship lineitem, put the code snippet into the html and...
+      </p>
+      <p>
+        Another way is to keep on posting more data, maybe novel, maybe tech report (anyway, who cares) here until it successfully
+        fools the bot (which I believe should be easy enough). I don't really have to post junk here since I already have lots of
+        meaningful information (which may not be agreed by my OPG colleage, who knows) below. We'll see.
+      </p>
+    </div>
+    <hr/>
+    <div>
+      <p>
+        <h2>〔中期报告〕暖环的评分规则，关卡设置以及在线搭配器</h2>
+      </p>
+      <p><strong style="color:red">
+        Originally posted on tieba, 2015-05-31, Note that the naming is actually wrong, 暖环 is the abbreviation for nikki v2
+        while v3 should be called like 奇迹. </strong>
+      </p>
+      <p>
+        如果觉得报告太长懒得看分析和结论，那么直接用我写的在线搭配器就可以了，网址如下：<br/>
+ivangift.github.io/nikkiup2u3<br/>
+建议直接复制url贴到地址栏打开，支持按照属性筛选以及计分排序两种模式。可以勾选属于自己的衣柜，自动保存，刷新页面不会丢失，请尽量用chrome/firefox打开。<br/>
+
+<br/>
+前言<br/>
+这份报告主要是结合了以下两个帖子的讨论结果：<br/>
+[beta]奇迹暖暖服装筛选器在线版 (http://tieba.baidu.com/p/3792563906)<br/>
+奇迹暖暖的逆向工程计划，一起来测出评分规则吧 (http://tieba.baidu.com/p/3792916736)<br/>
+在各位同好的帮助和鼓励下，获得了许多宝贵的成果，在这里与大家分享，也接受诸位的检验。在这里要感谢提供衣柜数据的@jillhx，以及在逆向工程过程中参与讨论的各位，尤其是@dianashusy, @虫子wormlet 等人提供的信息。<br/>
+
+<br/>
+一、关卡设置<br/>
+每一关五项属性的权重是各不相同的，竞技场模式尚未测试过，但是很可能也是如此。<br/>
+举例来说，少女1-1的权重是简约1 可爱2 活泼3 清纯2 清凉1，少女1-2的权重是简约3 可爱1.5 优雅3 清纯3 保暖1<br/>
+
+<br/>
+二、属性相克<br/>
+相克的属性不计分！相克的属性不计分！相克的属性不计分！（重要的事情就是得说三遍）<br/>
+不计分的意思是这个属性当0分计，不倒扣分。换句话说，再差的衣服（饰品除外，下面另讲），哪怕只搭上了一个属性也是值得穿上的。关于这个结论如何证明请参见逆向工程贴<br/>
+
+<br/>
+三、F了<br/>
+某些连衣裙、上衣、下装穿上会导致F。在F的情况下，所有的分数被除以10计算。<br/>
+F的原因仍然未知，大家的观察结果是某些tag的衣服只能用于要求该tag的关卡，但是也有例外。<br/>
+
+<br/>
+四，衣服的分值<br/>
+每件衣服都会有一个五维的属性，然后根据这个分数落在哪个区间决定给予何种等级的评定。考虑到随机因素，最高分的A类衣服的得分偶尔可能会超过最低分的S类衣服。<br/>
+从档位划分上看，上衣的分数＝下装的分数＝连衣裙的分数/2<br/>
+以下是我测出的所有部位的分数档位，请注意由于体力和衣服数量有限，有些数据存在比较大的误差：<br/>
+头发<br/>
+SS:est 1250 S:950~1150 A:750~900 B:550~750 C:est 550<br/>
+连衣裙<br/>
+SS:est 5000~5200 S:3800~4200 A:3000~3800 B:2500~3000 C:1900~2500<br/>
+外套 (部分结果来自@dianashusy)<br/>
+SS:490~520 S:370~450 A:300~360 B:230~280 C:est 190~210<br/>
+上衣<br/>
+SS:est 2725 S:1750~2100 A:1400~1700 B:1250~1400 C: 800~1200<br/>
+下装<br/>
+SS:est 2725 S:1800~2100 A:1400~1800 B:1250~1400 C: 800~1200<br/>
+袜子 (部分结果来自@dianashusy)<br/>
+SS:est 860 S:570~650 A:440~550 B:400~440 C:270~300<br/>
+鞋子<br/>
+SS:est 1000 S:770~950 A:640~750 B:530~580 C:380~450<br/>
+饰品 (所有部位均一致)<br/>
+SS:est 470~500 S:370~450 A:290~370 B:220~280 C:est 190~210<br/>
+妆容 (样本太少)<br/>
+SS:est 250~280 S:190 A:130 B:120 C:无数据<br/>
+
+<br/>
+五、饰品问题<br/>
+穿在身上的饰品一旦超过三件就会被惩罚，目前惩罚的规律还不明确，只能确定与饰品数量有关。大致来说<br/>
+4件饰品：将被扣除饰品总分的6.5%<br/>
+5件饰品：将被扣除饰品总分的11%<br/>
+6件饰品：将被扣除饰品总分的18%<br/>
+7件饰品：将被扣除饰品总分的25%<br/>
+8件饰品：将被扣除饰品总分的31%<br/>
+9件饰品：将被扣除饰品总分的36%<br/>
+10件饰品：将被扣除饰品总分的42%<br/>
+11件饰品：将被扣除饰品总分的46%<br/>
+所以如果某些部位只有1000分以下的饰品，请不要穿了，不然反而分数更低<br/>
+
+<br/>
+六、future work<br/>
+－测出所有关卡的属性权重<br/>
+－搞清楚饰品的惩罚规律<br/>
+－研究tag相关物品的评分规律<br/>
+
+<br/>
+七、吐槽<br/>
+说实话我很反感暖环公布属性并且用属性来决定评分，每一次过关或者参加评选赛我都没有功夫去看衣服的样子，而总是陷入了一群五维数据中寻找一个分数最高的结果，每次都这样实在是太伤脑细胞了，这也是让我有动力去逆向工程并且写了一个在线模拟器的原因。我希望暖暖类的游戏能真的回到注重色彩、搭配、主题等等的命题上来，让我们看到一个真实的名叫暖暖的女孩子，而不是她衣柜里一堆又一堆的SABC。<br/>
+
+      </p>
+    </div>
+  </body>
+</html>
