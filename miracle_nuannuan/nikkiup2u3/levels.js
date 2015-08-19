@@ -45,7 +45,6 @@ function parseCriteria(criteria) {
 // be careful when you copy it, levels in chapter 7 are stubs only
 var levelsRaw = {
   '云端七夕庙会': [-1, -1, -1.5, 1.5, 1],
-  '云端外交官': [-2, -2, -2, 1, 1],
   '1-1': [1, 2, 3, 2, 1],
   '1-2': [3, 1.5, -3, 3, -1],
   '1-3': [-2, -1, -3, 2, 1],
@@ -390,7 +389,6 @@ function specialFactory76B() {
  */
 var levelBonus = {
   '云端七夕庙会': [addScoreBonusFactory('B', 1, "中式古典")],
-  '云端外交官': [addScoreBonusFactory('A', 1, "哥特风")],
   "1-1": [],
   "1-2": [],
   "1-3": [addScoreBonusFactory('B', 0.25, "中式古典")],
