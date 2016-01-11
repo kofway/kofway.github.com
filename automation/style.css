@@ -1,0 +1,224 @@
+.Copyright {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #112E74;
+}
+.BottomNav {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: bold;
+	color: #112E74;
+	text-decoration: none;
+}
+a.BottomNav:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: underline;
+}
+.Footer {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #333333;
+	text-decoration: none;
+}
+a.Footer:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #999999;
+	text-decoration: none;
+}
+.SubNav1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-indent: 10px;
+	line-height: 1px;
+}
+a.SubNav1:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-indent: 10px;
+	line-height: 1px;
+	font-weight: bold;
+}
+.SubNav2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-indent: 10px;
+	line-height: 1px;
+}
+a.SubNav2:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	text-decoration: none;
+	text-indent: 10px;
+	line-height: 1px;
+	font-weight: bold;
+}.PageTitle {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #00306C;
+	font-weight: bold;
+}.PageTitleWht {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.BodyCopy {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+}
+.BodyCopyWht {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.WeatherText {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a.WeatherText:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a.WeatherText:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.WeatherTemp {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+a.WeatherTemp:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+a.WeatherTemp:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: bold;
+	text-decoration: none;
+}
+a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #003399;
+	text-decoration: underline;
+}
+a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: underline;
+	text-decoration: underline;
+}
+hr {
+	color: #003399;
+}
+.SubHead {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #00306c;
+	text-transform: uppercase;
+}
+#page-container {
+	width: 100%;
+	margin: auto;
+	background: white;
+}
+#teriaryNav{
+	width: 185;
+	float: left;
+	margin: auto;
+	background: white;
+}
+#mainContent{
+	float: right;
+	clear: left;
+	margin: 10px;
+	background: white;
+}
+#header {
+	height: 96px;
+}
+#footer {
+	height: 19px;
+	width: 100%;
+	clear: both;
+}
+#middle {
+	background: white;
+	width: 800px;
+}
+.hidden {
+	display: none;
+}
+.MemorialBullets {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+}
+.MemorialLinks {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a.MemorialLinks:link {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a.MemorialLinks:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+#AirCanadaBadge{
+	position: relative;
+	top: -450px;
+	right: -10px;
+	height: 61px;
+	width: 162px;
+}
+#container{
+	margin-right: auto;
+	margin-left: auto;
+	height: 670px;
+	width: 766px;
+}
+#AllegiantBadge {
+	position: relative;
+	top: -450px;
+	right: -10px;
+	height: 61px;
+	width: 162px;
+}
