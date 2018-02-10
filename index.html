@@ -1,63 +1,299 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset=utf-8 />
-	<!-- <meta http-equiv="refresh" content="0; url=personal/xwei/resume.html" /> -->
-	<script>
-    if(true){
-      window.location = "personal/xwei/resume.html";
-    }
-   </script>
-	<title>kofway github page</title>
-	<link rel="stylesheet" href="css/base.css" type="text/css" media="screen">
-	<meta name="viewport" content="width=device-width; initial-scale=1.0" />
-</head>
+  <title>WaYBloG</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/w3.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <style>
+    body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+  </style>
+  <script type="text/javascript" src="lib/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="lib/jtruncate.js"></script>
+  <script type="text/javascript">
+    // script for expand/collapse block content
+    $(document).ready(function() { 
+      $('.jtruncate').jTruncate({ 
+        length: 500, /* The number of characters to display before truncating. */ 
+        minTrail: 0, /* The minimum number of "extra" characters required to truncate. This option allows you to prevent truncation of a section of text that is only a few characters longer than the specified length. */
+        moreText: "Read More", // The text to use for the "more" link. 
+        lessText: "Show Less", // The text to use for the "less" link. 
+        ellipsisText: "...", // The text to append to the truncated portion. 
+      }); 
+    });
+  </script>
 
-<body>
-	<div class="container">
-		<table class="table_view">
-			<tr>
-				<td align="center">
-					<a href="moz_webapp/index.html">Firefox WebAPI Test Page</a>
-				</td>	
-			</tr>	
-		</table>
-	</div>
-	<div class="container">
-		<table class="table_view">
-			<tr>
-				<td align="center">
-					<a href="responsive/responsive.html">Responsive Design Test Page</a>
-				</td>	
-			</tr>	
-		</table>
-	</div>
-	<div class="container">
-		<table class="table_view">
-			<tr>
-				<td align="center">
-					<a href="colorpicker/cp_index.html">Color Picker Page</a>
-				</td>
-			</tr>	
-		</table>
-	</div>
-	<div class="container">
-		<table class="table_view">
-			<tr>
-				<td align="center">
-					<a href="personal/index.html">Personal Pages</a>
-				</td>
-			</tr>	
-		</table>
-	</div>
-	<div class="container">
-		<table class="table_view">
-			<tr>
-				<td align="center">
-					<a href="miracle_nuannuan/index.html">Nuannuan Optimizer/a>
-				</td>	
-			</tr>	
-		</table>
-	</div>	
-</body>
+  
+  <body class="w3-light-grey">
+    <div class="w3-content" style="max-width:1400px">
+      <header class="w3-container w3-center w3-padding-32"> 
+        <h1><b>WaYBloG</b></h1>
+        <p>Keep track of all little drops happen in life</p>
+      </header>
+
+      <!-- Grid -->
+      <div class="w3-row">
+        <!-- Blog entries -->
+        <div class="w3-col l8 s12">
+
+          <!-- Individual blogs starts here -->
+
+          <div class="w3-card-4 w3-margin w3-white" id="interview">
+            <div class="w3-container">
+              <h3><b>Interview Page</b></h3>
+              <h5>Gatekeeper is helpful... <span class="w3-opacity">Jan 11, 2016</span></h5>
+            </div>
+
+            <div class="w3-container">
+              <p class="jtruncate">
+                Had quite a few candidates who had no idea how automation works and how to write automation tests...very sad story...<br><br>
+                Thus created this page to use at the interview, to let the candidate write automated tests based on what's on the page. <br><br>
+                Planning to add more in the future but <a href="pages/automation_interview/test.html" target="_blank"> this </a> would be sufficient for the upcoming candidates.</p>
+              <div class="w3-row">
+                <div class="w3-col m8 s12">
+                  <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">interview</span>
+                  <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">automation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <div class="w3-card-4 w3-margin w3-white" id="useragent">
+            <div class="w3-container">
+              <h3><b>Useragent Info Page</b></h3>
+              <h5>WHY YOU NO LOAD DESKTOP PAGE, <span class="w3-opacity">Dec 15, 2014</span></h5>
+            </div>
+
+            <div class="w3-container">
+              <p class="jtruncate">
+                Encountered something quite funny when implementing a new webapp...it kept forcing the mobile view even though I'm already requesting for desktop page. I have no idea why this is happening... <br><br>
+                Might as well just use <a href="pages/useragent/useragent.html" target="_blank"> this page </a> on the device then...</p>
+                
+              <div class="w3-row">
+                <div class="w3-col m8 s12">
+                  <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">useragent</span>
+                  <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Responsive Design</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <div class="w3-card-4 w3-margin w3-white" id="responsive_test">
+            <div class="w3-container">
+              <h3><b>Responsive Design Testing</b></h3>
+              <h5>How webpages would look on various devices, <span class="w3-opacity">Jan 23, 2013</span></h5>
+            </div>
+
+            <div class="w3-container">
+              <p class="jtruncate">
+                Found a new tool online today which would help with responsive design testing. This could be a great help for any pages I'd like mobile users to view properly. 
+
+                This is available <a href="pages/responsive/responsive.html" target="_blank"> here</a>. </p>
+              <div class="w3-row">
+                <div class="w3-col m8 s12">
+                  <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Webapp</span>
+                  <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Javascript</span>
+                  <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">H5C3</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <div class="w3-card-4 w3-margin w3-white" id="ffos_webapp">
+            <div class="w3-container">
+              <h3><b>Firefox OS API Webapp</b></h3>
+              <h5>API Testing on the go, <span class="w3-opacity">Jun 19, 2012</span></h5>
+            </div>
+
+            <div class="w3-container">
+              <p class="jtruncate">
+                The app is created based on API available on gecko b2g device. It touches almost all APIs available to the device currently. 
+                Eventually this app will be loaded onto an actual device as a vanilla app and will be used to test API status on the specific physical device. 
+                Check this out at <a href="pages/ffos_webapp/index.html" target="_blank">Firefox OS Webapp</a>. </p>
+              <div class="w3-row">
+                <div class="w3-col m8 s12">
+                  <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">iOS</span>
+                  <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Applescript</span>
+                  <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Javascript</span>
+                  <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Automation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <div class="w3-card-4 w3-margin w3-white" id="ios_auto">
+            <div class="w3-container">
+              <h3><b>iOS Automation Framework</b></h3>
+              <h5>Auto pilot iOS apps from command line, <span class="w3-opacity">Nov 11, 2011</span></h5>
+            </div>
+
+            <div class="w3-container">
+              <p class="jtruncate">
+                This project, currently named trio, is dedicated to bring us automation for different mobile platforms. Right now it only supports iOS automation using the instruments.app provided by apple. The test cases themselves use javascript to perform UI interactions. As a result, we need to familiar outselves with the syntax and format of the test cases.<br><br>
+
+                First thing, we should clone the sugarcrm/PhoneVooDoo repository and check the files under the folder Trio. The powerpoint document is a good starting point to gain some knowledge towards what this piece of code does.<br><br>
+
+                The text.xml is the "test file" that testers will write. The output.js is the converted javascript tests mentioned above. Currently trio only converts the xml file to javascript. In the future we should implement it in a way such that it will also push the converted test to instruments and have it run the converted test.<br><br>
+
+                There are some useful links provided in ref#2 to help us understand the whole iOS automation process. Also there's been enhancements done by apple to make our lives easier. We will also want to be able to run trio through command line as well in order to make it friendly for CI automation process. Trio uses documentbuilder for xml parsing, so some knowledge regarding the w3c dom libraries are recommended.<br><br>
+
+                This is available at <a href="https://github.com/kofway/sugarcrm_iosAuto" target="_blank"> this github repo</a>. </p>
+              <div class="w3-row">
+                <div class="w3-col m8 s12">
+                  <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Responsive Design</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+
+
+          <!-- BLOG ENTRY TEMPLATE
+<div class="w3-card-4 w3-margin w3-white" id="id">
+<div class="w3-container">
+<h3><b>TITLE</b></h3>
+<h5>NOTE, <span class="w3-opacity">DATE</span></h5>
+</div>
+
+<div class="w3-container">
+<p class="jtruncate">
+INFO
+LINK
+This is available <a href="pages/responsive/responsive.html" target="_blank"> here</a>. </p>
+<div class="w3-row">
+<div class="w3-col m8 s12">
+<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">tag1</span>
+<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">tag2</span>
+<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">tag3</span>
+</div>
+</div>
+</div>
+</div>
+<hr>
+-->
+
+          <!-- END BLOG ENTRIES -->
+        </div>
+
+        <!-- Introduction menu -->
+        <div class="w3-col l4">
+          <!-- About Card -->
+          <div class="w3-card w3-margin w3-margin-top">
+            <div class="w3-container w3-padding">
+              <h4>Hi! I'm Xiao Meng Wei<a href="resource/resume.pdf" download="Resume - Xiao Meng Wei.pdf"><img src="resource/resume-logo.png" alt="Image" class="w3-left w3-margin-right" style="height:27px;width=27px"></a></h4>            </div>
+            <div class="w3-container w3-white">
+              <p>A software developer currently based in NYC. I love dig around things which makes my time spent worthwhile.</p>
+            </div>
+          </div><hr>
+
+          <!-- Experiences -->
+          <div class="w3-card w3-margin">
+            <div class="w3-container w3-padding">
+              <h4>What I've done so far</h4>
+            </div>
+            <ul class="w3-ul w3-hoverable w3-white">
+              <li class="w3-padding-16">
+                <img src="resource/adaptly-logo-new.png" alt="Image" class="w3-left w3-margin-right" style="height:27px;width=25px">
+                <span class="w3-large">Senior Software Engineer in Test</span><br>
+                <span>- Frontend UI automation framework</span><br>
+                <span>- Frontend unit test framework</span><br>
+                <span>- Backend API recorder/replayer</span>
+              </li>
+              <li class="w3-padding-16">
+                <img src="resource/intellinx-logo.jpg" alt="Image" class="w3-left w3-margin-right" style="height:27px;width=25px">
+                <span class="w3-large">IMplementation Engineer</span><br>
+                <span>- Custom ActiveMQ Elasticsearch river</span><br>
+                <span>- Smart filtering service</span>
+              </li>
+              <li class="w3-padding-16">
+                <img src="resource/Mozilla_logo.png" alt="Image" class="w3-left w3-margin-right" style="height:27px;width=25px">
+                <span class="w3-large">Mobile QA Developer</span><br>
+                <span>- Webapp for testing Firefox OS endpoints</span><br>
+                <span>- Robocop - a mozilla variant of Robotium</span>
+              </li> 
+              <li class="w3-padding-16">
+                <img src="resource/XE_logo.png" alt="Image" class="w3-left w3-margin-right" style="height:27px;width=25px">
+                <span class="w3-large">Mobile Developer</span><br>
+                <span>- xe.com currency conversion app</span>
+              </li>   
+              <li class="w3-padding-16">
+                <img src="resource/sugarcrm-logo.png" alt="Image" class="w3-left w3-margin-right" style="height:27px;width=25px">
+                <span class="w3-large">Automation Engineer</span><br>
+                <span>- iOS automation testing framework</span>
+              </li>
+            </ul>
+          </div>
+          <hr> 
+
+          <!-- Contact -->
+          <div class="w3-card w3-margin">
+
+            <script>
+              function sendMail() {
+                var link = "mailto:kofwayios@gmail.com";
+                window.location.href = link;
+              }
+            </script>
+
+            <div class="w3-container w3-padding">
+              <h4>Get in touch</h4>
+            </div>
+
+            <ul class="w3-ul w3-hoverable w3-white">
+              <li class="w3-padding-16">
+
+                <a href="https://github.com/kofway" target="_blank"><img src="resource/GitHub-logo.png" alt="Image" class="w3-left w3-margin-right" style="height:50px;width=50px"></a>
+                <a href="https://www.linkedin.com/in/kofway/" target="_blank"><img src="resource/linkedin-logo.png" alt="Image" class="w3-left w3-margin-right" style="height:50px;width=50px"></a>
+                <!--                <a href="https://www.facebook.com/kofway" target="_blank"><img src="resource/facebook-logo.png" alt="Image" class="w3-left w3-margin-right" style="height:50px;width=50px"></a>-->
+                <!--                <a href="https://twitter.com/kofway" target="_blank"><img src="resource/Twitte-logo.png" alt="Image" class="w3-left w3-margin-right" style="height:50px;width=50px"></a>-->
+                <!--                <a href="https://www.instagram.com/kofway/" target="_blank"><img src="resource/instagram-logo.png" alt="Image" class="w3-left w3-margin-right" style="height:50px;width=50px"></a>-->
+                <a href=""><img src="resource/email-logo.png" alt="Image" class="w3-left w3-margin-right" style="height:50px;width=50px" onclick="sendMail(); return false"></a>
+                <br><br>
+
+              </li>
+            </ul>
+          </div>
+          <hr> 
+
+          <!-- Labels / tags -->
+          <!--
+<div class="w3-card w3-margin">
+<div class="w3-container w3-padding">
+<h4>Tags</h4>
+</div>
+<div class="w3-container w3-white">
+<p><span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
+<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
+<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+<span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
+</p>
+</div>
+</div>
+-->
+
+          <!-- END Introduction Menu -->
+        </div>
+
+        <!-- END GRID -->
+      </div><br>
+
+      <!-- END w3-content -->
+    </div>
+
+    <footer class="w3-container w3-dark-grey w3-padding-small w3-margin-top">
+      <!--
+<button class="w3-button w3-black w3-disabled w3-padding-large w3-margin-bottom">Previous</button>
+<button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
+-->
+      <p>@2018 Xiao Meng Wei. Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
+
+  </body>
 </html>
