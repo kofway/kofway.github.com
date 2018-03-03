@@ -23,12 +23,19 @@
       }); 
     });
   </script>
+  <script language="Javascript">
+    if (navigator.appName == "Microsoft Internet Explorer")
+    {
+      alert("This page will look disastrous in IE. Please considering viewing in other browsers (ie. Firefox, Chrome, Safari). ");
+    }
+  </script>
+  <link rel="shortcut icon" href="resource/favicon.ico" />
 
-  <body class="w3-light-grey">
+  <body class="w3-light-grey" background="resource/bg.jpg">
     <div class="w3-content" style="max-width:1400px">
       <header class="w3-container w3-center w3-padding-32"> 
-        <h1><b>WaYBloG</b></h1>
-        <p>Keep track of all little drops happen in life</p>
+        <h1 class="block-content-header"><b>WaYBloG</b></h1>
+        <p><b>Keep track of all little drops happen in life</b></p>
       </header>
 
       <!-- Grid -->
@@ -39,12 +46,12 @@
           <!-- Individual blogs starts here -->
 
           <div class="w3-card-4 w3-margin w3-white" id="id">
-            <div class="w3-container">
+            <div class="w3-container block-content">
               <h3><b>Sticky: Migration Ongoing...</b></h3>
               <h5>Migrating from local repos to online, <span class="w3-opacity">ongoing</span></h5>
             </div>
 
-            <div class="w3-container">
+            <div class="w3-container block-content">
               <p class="jtruncate">
                 The website is currently being migrated from all sorts of places...local, git page, and work notes...
               <div class="w3-row">
@@ -56,12 +63,12 @@
           <hr>
 
           <div class="w3-card-4 w3-margin w3-white" id="interview">
-            <div class="w3-container">
+            <div class="w3-container block-content">
               <h3><b>Interview Page</b></h3>
               <h5>Gatekeeper is helpful... <span class="w3-opacity">Jan 11, 2016</span></h5>
             </div>
 
-            <div class="w3-container">
+            <div class="w3-container block-content">
               <p class="jtruncate">
                 Had quite a few candidates who had no idea how automation works and how to write automation tests...very sad story...<br><br>
                 Thus created this page to use at the interview, to let the candidate write automated tests based on what's on the page. <br><br>
@@ -77,12 +84,12 @@
           <hr>
 
           <div class="w3-card-4 w3-margin w3-white" id="useragent">
-            <div class="w3-container">
+            <div class="w3-container block-content">
               <h3><b>Useragent Info Page</b></h3>
               <h5>WHY YOU NO LOAD DESKTOP PAGE, <span class="w3-opacity">Dec 15, 2014</span></h5>
             </div>
 
-            <div class="w3-container">
+            <div class="w3-container block-content">
               <p class="jtruncate">
                 Encountered something quite funny when implementing a new webapp...it kept forcing the mobile view even though I'm already requesting for desktop page. I have no idea why this is happening... <br><br>
                 Might as well just use <a href="pages/useragent/useragent.html" target="_blank"> this page </a> on the device then...</p>
@@ -98,12 +105,12 @@
           <hr>
 
           <div class="w3-card-4 w3-margin w3-white" id="responsive_test">
-            <div class="w3-container">
+            <div class="w3-container block-content">
               <h3><b>Responsive Design Testing</b></h3>
               <h5>How webpages would look on various devices, <span class="w3-opacity">Jan 23, 2013</span></h5>
             </div>
 
-            <div class="w3-container">
+            <div class="w3-container block-content">
               <p class="jtruncate">
                 Found a new tool online today which would help with responsive design testing. This could be a great help for any pages I'd like mobile users to view properly. 
 
@@ -120,12 +127,12 @@
           <hr>
 
           <div class="w3-card-4 w3-margin w3-white" id="ffos_webapp">
-            <div class="w3-container">
+            <div class="w3-container block-content">
               <h3><b>Firefox OS API Webapp</b></h3>
               <h5>API Testing on the go, <span class="w3-opacity">Jun 19, 2012</span></h5>
             </div>
 
-            <div class="w3-container">
+            <div class="w3-container block-content">
               <p class="jtruncate">
                 The app is created based on API available on gecko b2g device. It touches almost all APIs available to the device currently. 
                 Eventually this app will be loaded onto an actual device as a vanilla app and will be used to test API status on the specific physical device. 
@@ -143,12 +150,12 @@
           <hr>
 
           <div class="w3-card-4 w3-margin w3-white" id="ios_auto">
-            <div class="w3-container">
+            <div class="w3-container block-content">
               <h3><b>iOS Automation Framework</b></h3>
               <h5>Auto pilot iOS apps from command line, <span class="w3-opacity">Nov 11, 2011</span></h5>
             </div>
 
-            <div class="w3-container">
+            <div class="w3-container block-content">
               <p class="jtruncate">
                 This project, currently named trio, is dedicated to bring us automation for different mobile platforms. Right now it only supports iOS automation using the instruments.app provided by apple. The test cases themselves use javascript to perform UI interactions. As a result, we need to familiar outselves with the syntax and format of the test cases.<br><br>
 
@@ -172,12 +179,12 @@
 
           <!-- BLOG ENTRY TEMPLATE
 <div class="w3-card-4 w3-margin w3-white" id="id">
-<div class="w3-container">
+<div class="w3-container block-content">
 <h3><b>TITLE</b></h3>
 <h5>NOTE, <span class="w3-opacity">DATE</span></h5>
 </div>
 
-<div class="w3-container">
+<div class="w3-container block-content">
 <p class="jtruncate">
 INFO
 LINK
@@ -201,19 +208,19 @@ This is available <a href="pages/responsive/responsive.html" target="_blank"> he
         <div class="w3-col l4">
           <!-- About Card -->
           <div class="w3-card w3-margin w3-margin-top">
-            <div class="w3-container w3-padding">
-              <h4>Hi! I'm Xiao Meng Wei<a href="resource/resume.pdf" download="Resume - Xiao Meng Wei.pdf"><img src="resource/resume-logo.png" alt="Image" class="w3-left w3-margin-right" style="height:27px;width=27px"></a></h4>            </div>
-            <div class="w3-container w3-white">
+            <div class="w3-container w3-padding block-content-header">
+              <h4><b>Hi! I'm Xiao Meng Wei</b><a href="resource/resume.pdf" download="Resume - Xiao Meng Wei.pdf"><img src="resource/resume-logo.png" alt="Image" class="w3-left w3-margin-right" style="height:27px;width=27px"></a></h4>            </div>
+            <div class="w3-container w3-white block-content">
               <p>A software developer currently based in NYC. I love dig around things which makes my time spent worthwhile.</p>
             </div>
           </div><hr>
 
           <!-- Experiences -->
           <div class="w3-card w3-margin">
-            <div class="w3-container w3-padding">
-              <h4>What I've done so far</h4>
+            <div class="w3-container w3-padding block-content-header">
+              <h4><b>What I've done so far</b></h4>
             </div>
-            <ul class="w3-ul w3-hoverable w3-white">
+            <ul class="w3-ul w3-hoverable w3-white block-content">
               <li class="w3-padding-16">
                 <img src="resource/adaptly-logo-new.png" alt="Image" class="w3-left w3-margin-right" style="height:27px;width=25px">
                 <span class="w3-large">Senior Software Engineer in Test</span><br>
@@ -221,24 +228,24 @@ This is available <a href="pages/responsive/responsive.html" target="_blank"> he
                 <span>- Frontend unit test framework</span><br>
                 <span>- Backend API recorder/replayer</span>
               </li>
-              <li class="w3-padding-16">
+              <li class="w3-padding-16 block-content">
                 <img src="resource/intellinx-logo.jpg" alt="Image" class="w3-left w3-margin-right" style="height:27px;width=25px">
                 <span class="w3-large">IMplementation Engineer</span><br>
                 <span>- Custom ActiveMQ Elasticsearch river</span><br>
                 <span>- Smart filtering service</span>
               </li>
-              <li class="w3-padding-16">
+              <li class="w3-padding-16 block-content">
                 <img src="resource/Mozilla_logo.png" alt="Image" class="w3-left w3-margin-right" style="height:27px;width=25px">
                 <span class="w3-large">Mobile QA Developer</span><br>
                 <span>- Webapp for testing Firefox OS endpoints</span><br>
                 <span>- Robocop - a mozilla variant of Robotium</span>
               </li> 
-              <li class="w3-padding-16">
+              <li class="w3-padding-16 block-content">
                 <img src="resource/XE_logo.png" alt="Image" class="w3-left w3-margin-right" style="height:27px;width=25px">
                 <span class="w3-large">Mobile Developer</span><br>
                 <span>- xe.com currency conversion app</span>
               </li>   
-              <li class="w3-padding-16">
+              <li class="w3-padding-16 block-content">
                 <img src="resource/sugarcrm-logo.png" alt="Image" class="w3-left w3-margin-right" style="height:27px;width=25px">
                 <span class="w3-large">Automation Engineer</span><br>
                 <span>- iOS automation testing framework</span>
@@ -257,11 +264,11 @@ This is available <a href="pages/responsive/responsive.html" target="_blank"> he
               }
             </script>
 
-            <div class="w3-container w3-padding">
-              <h4>Get in touch</h4>
+            <div class="w3-container w3-padding block-content-header">
+              <h4><b>Get in touch</b></h4>
             </div>
 
-            <ul class="w3-ul w3-hoverable w3-white">
+            <ul class="w3-ul w3-hoverable w3-white block-content">
               <li class="w3-padding-16">
 
                 <a href="https://github.com/kofway" target="_blank"><img src="resource/GitHub-logo.png" alt="Image" class="w3-left w3-margin-right" style="height:50px;width=50px"></a>
