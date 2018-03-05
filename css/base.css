@@ -4,3 +4,14 @@
 .block-content-header {
     background-image: url("../resource/blog-header-bg.jpg"); 
 }
+.link-img:hover {
+    transform: scale(1.1, 1.1);
+}
+.exp-block:hover {
+    transform: scale(1.03, 1.03);
+    border: 1px double grey;
+}
+.exp-block a {
+    display: block;
+    text-decoration: none;
+}
