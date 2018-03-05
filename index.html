@@ -62,6 +62,34 @@
           </div>
           <hr>
 
+          <div class="w3-card-4 w3-margin w3-white" id="td_header">
+            <div class="w3-container block-content">
+              <h3><b>TDOnlineBanking Header Issue</b></h3>
+              <h5>New app rollout done wrong, <span class="w3-opacity">Mar 1, 2018</span></h5>
+            </div>
+
+            <div class="w3-container block-content">
+              <p class="jtruncate">
+                I was unable to log in to my td online banking site for a few days. The page kept showing that there's a 400s bad request and asked me to try again at a later time.
+                Tried today with another browser and worked. I realized they must've screwed up the website that the previous local data is no longer compatible with the new site.<br><br>
+                Indeed, the error is this :<br><br>
+                "Size of a request header field exceeds server limit." (WHAT)<br><br>
+                Alas, the mighty chrome has the function to remove individual site data under "privacy->content settings->cookies->see all cookies and site data". But I'm still wondering if the site can force clear client-side cookies though...maybe force the expiration date from the server side?<br><br>
+                Lesson learned:<br>
+                1. The level of error exposure to users should be accurate and meaningful at the same time.<br>
+                2. Running with previous settings for compatibility testing needs to be on a regular basis.<br>
+                3. Messing with data you do not control is BAD.
+                
+              <div class="w3-row">
+                <div class="w3-col m8 s12">
+                  <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">thoughts</span>
+                  <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">cookie</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+
           <div class="w3-card-4 w3-margin w3-white" id="interview">
             <div class="w3-container block-content">
               <h3><b>Interview Page</b></h3>
@@ -209,7 +237,7 @@ This is available <a href="pages/responsive/responsive.html" target="_blank"> he
           <!-- About Card -->
           <div class="w3-card w3-margin w3-margin-top">
             <div class="w3-container w3-padding block-content-header">
-              <h4><b>Hi! I'm Xiao Meng Wei</b><a href="resource/resume.pdf" download="Resume - Xiao Meng Wei.pdf"><img src="resource/resume-logo.png" alt="Image" class="w3-left w3-margin-right" style="height:27px;width=27px"></a></h4>            </div>
+              <h4><b>Hi! I'm Xiao Meng Wei</b><a href="resource/resume/resume.pdf" download="Resume - Xiao Meng Wei.pdf"><img src="resource/resume-logo.png" alt="Image" class="w3-left w3-margin-right" style="height:27px;width=27px"></a></h4>            </div>
             <div class="w3-container w3-white block-content">
               <p>A software developer currently based in NYC. I love dig around things which makes my time spent worthwhile.</p>
             </div>
